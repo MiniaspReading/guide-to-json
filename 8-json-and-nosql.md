@@ -9,5 +9,5 @@ ON Account.accoundId = Address.accountId;
 ```
 透過SQL JOIN 語句，就可以取得 Account 與 Address 這兩個資料表的關聯資料：firstName，lastName，street與zip。
 
-*【NoSQL】*不是關聯式資料庫，無法使用 SQL 語句查詢資料已取得關聯表格。*【NoSQL】*是一個*【鍵-值儲存體】*有些是XML文件或JSON文件，
-我們討論一種使用JSON文件來儲存資料的文件儲存體資料庫*【CouchDB】*。
+*NoSQL*不是關聯式資料庫，無法使用 SQL 語句查詢資料已取得關聯表格。*NoSQL*是一個*【鍵-值儲存體】*有些是XML文件或JSON文件，
+我們討論一種使用JSON文件來儲存資料的文件儲存體資料庫*CouchDB*。
