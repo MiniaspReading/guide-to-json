@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>Elements</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-elements">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="yuan(elements)">&#x5143;&#x7D20;(Elements)</h1>
+<p>Elements are things inside your component. <br>
+&#x5143;&#x7D20;&#x5C31;&#x662F;&#x5728;&#x4F60;&#x7684;&#x5143;&#x4EF6;&#x4E2D;&#x7684;&#x7269;&#x4EF6;</p>
+<p><img src="images/component-elements.png" alt=""></p>
+<h2 id="naming-elements-yuan">Naming elements &#x5143;&#x7D20;&#x7684;&#x547D;&#x540D;</h2>
+<p>Each component may have elements. They should have classes that are only <strong>one word</strong>. <br>
+&#x6BCF;&#x500B;&#x5143;&#x4EF6;&#x6216;&#x8A31;&#x6709;&#x6578;&#x500B;&#x5143;&#x7D20;&#x3002;&#x5B83;&#x5011;&#x7684; class &#x61C9;&#x8A72;&#x53EA;&#x80FD;&#x7528; <strong>&#x4E00;&#x500B;&#x55AE;&#x5B57;</strong> &#x4F86;&#x547D;&#x540D;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-class">.search-form</span> {
+  &gt; <span class="hljs-class">.field</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-class">.action</span> { <span class="pl-c">/* ... */</span> }
+}
+</code></pre>
+<h2 id="element-selectors-yuan">Element selectors &#x5143;&#x7D20;&#x9078;&#x64C7;&#x5668;</h2>
+<p>Prefer to use the <code>&gt;</code> child selector whenever possible. This prevents bleeding through nested components, and performs better than descendant selectors. <br>
+&#x76E1;&#x53EF;&#x80FD;&#x4F7F;&#x7528; <code>&gt;</code> &#x4F86;&#x6307;&#x5B9A;&#x5B50;&#x9078;&#x64C7;&#x5668;&#x3002; &#x9019;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x5728;&#x5DE2;&#x72C0;&#x5143;&#x4EF6;&#x4E2D;&#x767C;&#x751F;&#x6EF2;&#x6F0F;&#x7684;&#x60C5;&#x6CC1;&#xFF0C;&#x4E14;&#x6548;&#x80FD;&#x6BD4;&#x5F8C;&#x4EE3;&#x9078;&#x64C7;&#x5668;&#x8981;&#x4F86;&#x5F97;&#x597D;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-class">.article-card</span> {
+  <span class="hljs-class">.title</span>     { <span class="pl-c">/* okay */</span> }
+  &gt; <span class="hljs-class">.author</span>  { <span class="pl-c">/* &#x2713; better */</span> }
+}
+</code></pre>
+<h2 id="on-multiple-words">On multiple words &#x5728;&#x591A;&#x500B;&#x55AE;&#x5B57;&#x4E0A;</h2>
+<p>For those that need two or more words, concatenate them without dashes or underscores. <br>
+&#x5C0D;&#x65BC;&#x90A3;&#x4E9B;&#x9700;&#x8981;&#x5169;&#x500B;&#x6216;&#x66F4;&#x591A;&#x7684;&#x55AE;&#x5B57;&#xFF0C;&#x5C07;&#x5B83;&#x5011;&#x9023;&#x63A5;&#x8D77;&#x4F86;&#x4E26;&#x4E0D;&#x8981;&#x52A0;&#x4E0A;&#x7834;&#x6298;&#x865F;&#x6216;&#x5E95;&#x7DDA;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-class">.profile-box</span> {
+  &gt; <span class="hljs-class">.firstname</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-class">.lastname</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-class">.avatar</span> { <span class="pl-c">/* ... */</span> }
+}
+</code></pre>
+<h2 id="avoid-tag-selectors-(tag)">Avoid tag selectors &#x907F;&#x958B;&#x6A19;&#x7C64; (tag) &#x9078;&#x64C7;&#x5668;</h2>
+<p>Use classnames whenever possible. Tag selectors are fine, but they may come at a small performance penalty and may not be as descriptive. <br>
+&#x76E1;&#x53EF;&#x80FD;&#x4F7F;&#x7528; class &#x540D;&#x7A31;&#x3002; &#x6A19;&#x7C64;&#x9078;&#x64C7;&#x5668;&#x96D6;&#x7136;&#x53EF;&#x4EE5;&#xFF0C;&#x4F46;&#x4ED6;&#x5011;&#x53EF;&#x80FD;&#x6703;&#x9020;&#x6210;&#x4E00;&#x4E9B;&#x6548;&#x80FD;&#x4E0A;&#x7684;&#x640D;&#x5931;&#x53CA;&#x4E0D;&#x5177;&#x6709;&#x53EF;&#x63CF;&#x8FF0;&#x6027;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-class">.article-card</span> {
+  &gt; <span class="hljs-tag">h3</span>    { <span class="pl-c">/* &#x2717; avoid */</span> }
+  &gt; <span class="hljs-class">.name</span> { <span class="pl-c">/* &#x2713; better */</span> }
+}
+</code></pre>
+<p class="pull-box">Not all elements should always look the same. Variants can help. <br>
+&#x4E26;&#x975E;&#x6240;&#x6709;&#x5143;&#x7D20;&#x7E3D;&#x662F;&#x770B;&#x8D77;&#x4F86;&#x8981;&#x662F;&#x4E00;&#x6A23;&#x7684;&#x3002;&#x8B8A;&#x6578;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x5E6B;&#x52A9;&#x3002;
+<a href="variants.html">Continue &#x7E7C;&#x7E8C; &#x2192;</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="components.html"><span class="title">第一章：什麼是 JSON?</span></a></div>
+          <div class="right"><a href="variants.html"><span class="label">Next: </span><span class="title">Variants</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">章節(Components)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">第一章：什麼是 JSON?</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title -active link-elements">Elements</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#naming-elements-yuan" class="hlink link-naming-elements-yuan">Naming elements 元素的命名</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#element-selectors-yuan" class="hlink link-element-selectors-yuan">Element selectors 元素選擇器</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#on-multiple-words" class="hlink link-on-multiple-words">On multiple words 在多個單字上</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#avoid-tag-selectors-(tag)" class="hlink link-avoid-tag-selectors-(tag)">Avoid tag selectors 避開標籤 (tag) 選擇器</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variants</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Nested components</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">關於架構(Structure)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">CSS 架構</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">備註(Notes)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Pitfalls</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Apprehensions</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Other resources</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">總結</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

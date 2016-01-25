@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>Variants</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-variants">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="variants">Variants &#x8B8A;&#x7A2E;</h1>
+<p>Components may have variants. Elements may have variants, too.<br>
+&#x5143;&#x4EF6;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x6A23;&#x7684;&#x8B8A;&#x5316;&#xFF0C;&#x5143;&#x7D20;&#x7576;&#x7136;&#x4E5F;&#x6709;&#xFF0C;&#x6211;&#x5011;&#x9019;&#x908A;&#x7A31;&#x70BA;&#x8B8A;&#x7A2E;&#x3002;</p>
+<p><img src="images/component-modifiers.png" alt=""></p>
+<br>
+<h2 id="naming-variants">Naming variants &#xFF08;&#x8B8A;&#x7A2E;&#x7684;&#x547D;&#x540D;&#xFF09;</h2>
+<p>Classnames for variants will be prefixed by a dash (<code>-</code>).<br>
+&#x8B8A;&#x5316;&#x7684;&#x540D;&#x7A31;&#x524D;&#x9808;&#x52A0;&#x4E0A;&#x5206;&#x865F;(-)&#x4F5C;&#x70BA;&#x524D;&#x7DB4;&#x8A5E;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-class">.like-button</span> {
+  &amp;<span class="hljs-class">.-wide</span> { <span class="pl-c">/* ... */</span> }
+  &amp;<span class="hljs-class">.-short</span> { <span class="pl-c">/* ... */</span> }
+  &amp;<span class="hljs-class">.-disabled</span> { <span class="pl-c">/* ... */</span> }
+}
+</code></pre>
+<h2 id="element-variants-yuan">Element variants &#x5143;&#x7D20;&#x8B8A;&#x7A2E;</h2>
+<p>Elements may also have variants.<br>
+&#x5143;&#x7D20;&#x4E5F;&#x6703;&#x6709;&#x8B8A;&#x7A2E;&#x3002;</p>
+<pre><code class="lang-scss"><span class="hljs-class">.shopping-card</span> {
+  &gt; <span class="hljs-class">.title</span> { <span class="pl-c">/* ... */</span> }
+  &gt; <span class="hljs-class">.title</span><span class="hljs-class">.-small</span> { <span class="pl-c">/* ... */</span> }
+}
+</code></pre>
+<h2 id="dash-prefixes">Dash prefixes &#x5206;&#x865F;&#x505A;&#x70BA;&#x524D;&#x7DB4;</h2>
+<p>Dashes are the preferred prefix for variants.<br>
+&#x5C0D;&#x65BC;&#x8B8A;&#x7A2E;&#xFF0C;&#x5206;&#x865F;&#x662F;&#x8F03;&#x597D;&#x7684;&#x524D;&#x7DB4;&#x7528;&#x6CD5;&#x3002;</p>
+<ul>
+<li>It prevents ambiguity with elements.</li>
+<li>&#x53EF;&#x9632;&#x6B62;&#x96D9;&#x95DC;&#x8A9E;&#x7684;&#x5143;&#x7D20;&#x3002;</li>
+<li>A CSS class can only start with a letter, <code>_</code> or <code>-</code>.</li>
+<li>&#x4E00;&#x500B; CSS &#x7684; class &#x53EA;&#x80FD;&#x4EE5; &#x5E95;&#x7DDA; &quot;_&quot; &#x6216;&#x5206;&#x865F; &quot;-&quot; &#x4F5C;&#x70BA;&#x958B;&#x982D;&#x3002;</li>
+<li>Dashes are easier to type than underscores.</li>
+<li>&#x5206;&#x865F;&#x6BD4;&#x5E95;&#x7DDA;&#x66F4;&#x5BB9;&#x6613;&#x8F38;&#x5165;&#x3002;</li>
+<li>It kind of resembles switches in UNIX commands (<code>gcc -O2 -Wall -emit-last</code>).</li>
+<li>&#x5B83;&#x6709;&#x4E00;&#x9EDE;&#x985E;&#x4F3C;&#x5728; UNIX &#x547D;&#x4EE4;&#x5207;&#x63DB; &#xFF08;<code>gcc -O2 -Wall -emit-last</code>)&#x3002;</li>
+</ul>
+<p class="pull-box">How do you deal with complex elements? Nest them.<br>
+&#x9047;&#x5230;&#x8907;&#x96DC;&#x7684;&#x5143;&#x7D20;&#x8A72;&#x5982;&#x4F55;&#x8655;&#x7406;&#x5462;? &#x5C07;&#x5B83;&#x5011;&#x5DE2;&#x72C0;&#x5316;&#x5427;&#xFF01;
+<a href="nested-components.html">Continue &#x2192;</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="elements.html"><span class="title">Elements</span></a></div>
+          <div class="right"><a href="nested-components.html"><span class="label">Next: </span><span class="title">Nested components</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">章節(Components)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">第一章：什麼是 JSON?</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elements</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title -active link-variants">Variants</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#naming-variants" class="hlink link-naming-variants">Naming variants （變種的命名）</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#element-variants-yuan" class="hlink link-element-variants-yuan">Element variants 元素變種</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#dash-prefixes" class="hlink link-dash-prefixes">Dash prefixes 分號做為前綴</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Nested components</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">關於架構(Structure)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">CSS 架構</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">備註(Notes)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Pitfalls</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Apprehensions</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Other resources</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">總結</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

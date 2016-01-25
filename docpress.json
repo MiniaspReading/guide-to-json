@@ -1,0 +1,11 @@
+{
+  "github": "MiniaspReading/guide-to-json",
+  "css": [
+    "http://ricostacruz.com/docpress-rsc/style.css"
+  ],
+  "markdown": {
+    "plugins": {
+      "decorate": {}
+    }
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>Other resources</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-other-resources">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="">&#x5176;&#x4ED6;&#x8CC7;&#x6E90;</h1>
+<ul>
+<li><a href="https://speakerdeck.com/dafed/managing-css-projects-with-itcss#49">ITCSS</a> (&quot;Inverted Triangle CSS&quot;) is a nice complement to any rscss structure.</li>
+<li><a href="http://ricostacruz.com/rsjs/">rsjs</a> (&quot;Reasonable Standard of JavaScript Structure&quot;) is a work-in-progress document for structuring JavaScript on basic sites.</li>
+</ul>
+<h2 id="other-solutions">Other solutions</h2>
+<h3 id="bem">BEM</h3>
+<p><a href="http://bem.info/">BEM</a> is nice, but some may be irked at its unconventional syntax. RSCSS pretty much follows BEM conventions, only with a different syntax.</p>
+<pre><code class="lang-html"><span class="pl-c">&lt;!-- BEM --&gt;</span>
+<span class="hljs-tag">&lt;<span class="pl-ent">form</span> <span class="pl-e">class</span>=<span class="pl-s">&apos;site-search site-search--full&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="pl-ent">input</span>  <span class="pl-e">class</span>=<span class="pl-s">&apos;site-search__field&apos;</span> <span class="pl-e">type</span>=<span class="pl-s">&apos;text&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s">&apos;site-search__button&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="pl-ent">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="pl-ent">form</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-html"><span class="pl-c">&lt;!-- rscss --&gt;</span>
+<span class="hljs-tag">&lt;<span class="pl-ent">form</span> <span class="pl-e">class</span>=<span class="pl-s">&apos;site-search -full&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="pl-ent">input</span>  <span class="pl-e">class</span>=<span class="pl-s">&apos;field&apos;</span> <span class="pl-e">type</span>=<span class="pl-s">&apos;text&apos;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s">&apos;button&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="pl-ent">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="pl-ent">form</span>&gt;</span>
+</code></pre>
+<h2 id="terminologies">Terminologies</h2>
+<p>The same concepts exist in similar ways in other CSS structuring ideologies.</p>
+<table>
+<thead>
+<tr>
+<th>RSCSS</th>
+<th>BEM</th>
+<th>SMACSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Component</td>
+<td>Block</td>
+<td>Module</td>
+</tr>
+<tr>
+<td>Element</td>
+<td>Element</td>
+<td>Sub-Component</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>?</td>
+<td>Layout</td>
+</tr>
+<tr>
+<td>Variant</td>
+<td>Modifier</td>
+<td>Sub-Module &amp; State</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="apprehensions.html"><span class="title">Apprehensions</span></a></div>
+          <div class="right"><a href="summary.html"><span class="label">Next: </span><span class="title">總結</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">章節(Components)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">第一章：什麼是 JSON?</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elements</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variants</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Nested components</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">關於架構(Structure)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">CSS 架構</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">備註(Notes)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Pitfalls</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Apprehensions</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title -active link-other-resources">Other resources</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#other-solutions" class="hlink link-other-solutions">Other solutions</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a href="#bem" class="hlink link-bem">BEM</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#terminologies" class="hlink link-terminologies">Terminologies</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">總結</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

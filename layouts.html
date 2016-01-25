@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>Layouts</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-layouts">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="(layouts)">&#x9801;&#x9762;&#x4F48;&#x5C40;(Layouts)</h1>
+<p><img src="images/layouts.png" alt=""></p>
+<h2 id="avoid-positioning-properties">Avoid positioning properties &#x8981;&#x907F;&#x958B;&#x5EA7;&#x6A19;&#x5C6C;&#x6027;</h2>
+<p>Components should be made in a way that they&apos;re reusable in different contexts. Avoid putting these properties in components:<br>
+&#x5EFA;&#x7ACB;&#x51FA;&#x4F86;&#x7684;&#x5143;&#x4EF6;&#x5FC5;&#x9808;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x540C;&#x5730;&#x65B9;&#x91CD;&#x8907;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x5011;&#x8981;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5230;&#x4EE5;&#x4E0B;&#x7684;&#x5C6C;&#x6027;&#x3002;</p>
+<ul>
+<li>Positioning (<code>position</code>, <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code>)</li>
+<li>&#x5EA7;&#x6A19;&#x76F8;&#x95DC; (<code>position</code>, <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code>)</li>
+<li>Floats (<code>float</code>, <code>clear</code>)</li>
+<li>&#x6D6E;&#x52D5;&#x76F8;&#x95DC; (<code>float</code>, <code>clear</code>)</li>
+<li>Margins (<code>margin</code>)</li>
+<li>&#x908A;&#x8DDD;&#x76F8;&#x95DC; (<code>margin</code>)</li>
+<li>Dimensions (<code>width</code>, <code>height</code>)</li>
+<li>&#x5C3A;&#x5BF8;&#x76F8;&#x95DC; (<code>width</code>, <code>height</code>)</li>
+</ul>
+<h2 id="fixed-dimensions">Fixed dimensions &#x56FA;&#x5B9A;&#x5C3A;&#x5BF8;</h2>
+<p>Exception to these would be elements that have fixed width/heights, such as avatars and logos.
+&#x7576;&#x7136;&#x6709;&#x4E9B;&#x4F8B;&#x5916;&#x7684;&#x60C5;&#x6CC1;&#x662F;&#x9700;&#x8981;&#x56FA;&#x5B9A;&#x7684;&#x9577;&#x5BEC;&#xFF0C;&#x50CF;&#x662F; &#x66FF;&#x8EAB;(avatar) &#x6216;&#x662F;&#x6A19;&#x8A8C;(logo)&#x3002;</p>
+<h2 id="define-positioning-in-parents">Define positioning in parents &#x5728;&#x7236;&#x7BC0;&#x9EDE;&#x5B9A;&#x7FA9;&#x4F4D;&#x7F6E;</h2>
+<p>If you need to define these, try to define them in whatever context they will be in. In this example below, notice that the widths and floats are applied on the <em>list</em> component, not the component itself. <br>
+&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x5B9A;&#x7FA9;&#x4E0A;&#x8FF0;&#x7684;&#x5C6C;&#x6027;&#xFF0C;&#x8A66;&#x8457;&#x5B9A;&#x7FA9;&#x4ED6;&#x5011;&#x5728;&#x4EFB;&#x4F55;&#x5340;&#x584A;&#x90FD;&#x662F;&#x4E00;&#x6A23;&#x7684;&#x3002;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x7BC4;&#x4F8B;&#xFF0C;&#x8981;&#x6CE8;&#x610F;&#x5230;&#x5BEC;&#x5EA6;&#x53CA;&#x6D6E;&#x52D5;&#x7684;&#x5C6C;&#x6027;&#x662F;&#x8A2D;&#x5B9A;&#x5728; <em>list</em> &#x5143;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5143;&#x4EF6;&#x672C;&#x8EAB;&#x3002;</p>
+<pre><code class="lang-css">.article-list {
+  &amp; {
+    @include clearfix;
+  }
+
+  &gt; .article-card {
+    width: 33.3%;
+    float: left;
+  }
+}
+
+.article-card {
+  &amp; { /* ... */ }
+  &gt; .image { /* ... */ }
+  &gt; .title { /* ... */ }
+  &gt; .category { /* ... */ }
+}
+</code></pre>
+<p class="pull-box">How do you apply margins outside a layout? Try it with Helpers.
+&#x5982;&#x4F55;&#x5728;&#x9801;&#x9762;&#x4F48;&#x5C40;&#x5916;&#x4F7F;&#x7528;&#x908A;&#x8DDD;&#xFF0C;&#x8A66;&#x8A66; Helpers &#x5427;&#x3002;
+<a href="helpers.html">Continue &#x7E7C;&#x7E8C; &#x2192;</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="nested-components.html"><span class="title">Nested components</span></a></div>
+          <div class="right"><a href="helpers.html"><span class="label">Next: </span><span class="title">Helpers</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">章節(Components)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">第一章：什麼是 JSON?</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elements</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variants</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Nested components</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title -active link-layouts">Layouts</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#avoid-positioning-properties" class="hlink link-avoid-positioning-properties">Avoid positioning properties 要避開座標屬性</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#fixed-dimensions" class="hlink link-fixed-dimensions">Fixed dimensions 固定尺寸</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#define-positioning-in-parents" class="hlink link-define-positioning-in-parents">Define positioning in parents 在父節點定義位置</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">關於架構(Structure)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">CSS 架構</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">備註(Notes)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Pitfalls</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Apprehensions</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Other resources</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">總結</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

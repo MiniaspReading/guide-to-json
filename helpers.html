@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>Helpers</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-helpers">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="helpers">Helpers</h1>
+<p>For general-purpose classes meant to override values, put them in a separate file and name them beginning with an underscore. They are typically things that are tagged with <em>!important</em>. Use them <em>very</em> sparingly. <br>
+&#x5C0D;&#x65BC;&#x4E00;&#x822C;&#x7528;&#x9014;&#x7684;&#x985E;&#x5225;(class)&#x901A;&#x5E38;&#x90FD;&#x662F;&#x53BB;&#x505A;&#x8986;&#x84CB;&#x7684;&#x52D5;&#x4F5C;&#xFF0C;&#x5C07;&#x5B83;&#x5011;&#x653E;&#x5728;&#x53E6;&#x4E00;&#x500B;&#x6A94;&#x6848;&#x4E2D;&#x4E26;&#x4E14;&#x4EE5;&#x5E95;&#x7DDA;&#x4F5C;&#x70BA;&#x958B;&#x982D;&#x4F86;&#x547D;&#x540D;&#x3002;&#x7531;&#x65BC;&#x4ED6;&#x5011;&#x901A;&#x5E38;&#x6703;&#x5728;&#x5F8C;&#x9762;&#x6A19;&#x8A18; <em>!important</em> &#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;&#x6642;&#x8981; <em>&#x975E;&#x5E38;</em> &#x8B39;&#x614E;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-class">._unmargin</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="pl-e">margin</span>:<span class="pl-s"> <span class="hljs-number">0</span> <span class="hljs-important">!important</span></span></span>; }</span>
+<span class="hljs-class">._center</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="pl-e">text-align</span>:<span class="pl-s"> center <span class="hljs-important">!important</span></span></span>; }</span>
+<span class="hljs-class">._pull-left</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="pl-e">float</span>:<span class="pl-s"> left <span class="hljs-important">!important</span></span></span>; }</span>
+<span class="hljs-class">._pull-right</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="pl-e">float</span>:<span class="pl-s"> right <span class="hljs-important">!important</span></span></span>; }</span>
+</code></pre>
+<h2 id="helpers">Helpers &#x7684;&#x547D;&#x540D;</h2>
+<p>Prefix classnames with an underscore. This will make it easy to differentiate them from modifiers defined in the component. Underscores also look a bit ugly which is an intentional side effect: using too many helpers should be discouraged.
+&#x4EE5;&#x5E95;&#x7DDA;&#x505A;&#x70BA;&#x985E;&#x5225;&#x540D;&#x7A31;&#x7684;&#x524D;&#x7DB4;&#x3002;&#x9019;&#x5C07;&#x4F7F;&#x5B9A;&#x7FA9;&#x7684;&#x5143;&#x4EF6;&#x4FEE;&#x98FE;&#x4E2D;&#x8F03;&#x5BB9;&#x6613;&#x5340;&#x5206;&#x3002;&#x5E95;&#x7DDA;&#x770B;&#x8D77;&#x4F86;&#x4E5F;&#x8A31;&#x662F;&#x6709;&#x90A3;&#x9EBC;&#x4E00;&#x9EDE;&#x96E3;&#x770B;&#xFF0C;&#x9019;&#x662F;&#x523B;&#x610F;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF1A;&#x8B93;&#x4F60;&#x77E5;&#x9053;&#x4E0D;&#x61C9;&#x8A72;&#x4F7F;&#x7528;&#x592A;&#x591A;&#x7684; helper&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">&apos;order-graphs -slim _unmargin&apos;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="pl-ent">div</span>&gt;</span>
+</code></pre>
+<h2 id="helpers">&#x6574;&#x7406; helpers</h2>
+<p>Place all helpers in one file called <code>helpers</code>. While you can separate them into multiple files, it&apos;s very preferrable to keep your number of helpers to a minimum.
+&#x5C07;&#x6240;&#x6709; helper &#x653E;&#x5728;&#x4E00;&#x500B;&#x540D;&#x70BA; <code>helpers</code> &#x7684;&#x6A94;&#x6848;&#x4E2D;&#x3002; &#x96D6;&#x7136;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x5011;&#x5206;&#x958B;&#x6210;&#x591A;&#x500B;&#x6A94;&#x6848;&#xFF0C;&#x4F46;&#x6700;&#x597D;&#x8B93;&#x4F60;&#x7684; helper &#x6578;&#x91CF;&#x964D;&#x5230;&#x6700;&#x4F4E;&#x3002;</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="layouts.html"><span class="title">Layouts</span></a></div>
+          <div class="right"><a href="css-structure.html"><span class="label">Next: </span><span class="title">CSS 架構</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">章節(Components)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">第一章：什麼是 JSON?</a>
+                </li>
+                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elements</a>
+                </li>
+                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variants</a>
+                </li>
+                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Nested components</a>
+                </li>
+                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
+                </li>
+                <li class="menu-item -level-2"><a href="helpers.html" class="link title -active link-helpers">Helpers</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#helpers" class="hlink link-helpers">Helpers 的命名</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#helpers" class="hlink link-helpers">整理 helpers</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">關於架構(Structure)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">CSS 架構</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">備註(Notes)</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Pitfalls</a>
+                </li>
+                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Apprehensions</a>
+                </li>
+                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Other resources</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">總結</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

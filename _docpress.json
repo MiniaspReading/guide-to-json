@@ -1,0 +1,449 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "JSON 精要",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index",
+        "headings": [
+          {
+            "title": "引言",
+            "depth": 2,
+            "id": ""
+          }
+        ]
+      },
+      {
+        "title": "章節(Components)",
+        "sections": [
+          {
+            "title": "第一章：什麼是 JSON?",
+            "source": "docs/components.md",
+            "url": "components.html",
+            "slug": "components",
+            "headings": [
+              {
+                "title": "Naming components 元件命名",
+                "depth": 2,
+                "id": "naming-components-yuan"
+              }
+            ]
+          },
+          {
+            "title": "Elements",
+            "source": "docs/elements.md",
+            "url": "elements.html",
+            "slug": "elements",
+            "headings": [
+              {
+                "title": "Naming elements 元素的命名",
+                "depth": 2,
+                "id": "naming-elements-yuan"
+              },
+              {
+                "title": "Element selectors 元素選擇器",
+                "depth": 2,
+                "id": "element-selectors-yuan"
+              },
+              {
+                "title": "On multiple words 在多個單字上",
+                "depth": 2,
+                "id": "on-multiple-words"
+              },
+              {
+                "title": "Avoid tag selectors 避開標籤 (tag) 選擇器",
+                "depth": 2,
+                "id": "avoid-tag-selectors-(tag)"
+              }
+            ]
+          },
+          {
+            "title": "Variants",
+            "source": "docs/variants.md",
+            "url": "variants.html",
+            "slug": "variants",
+            "headings": [
+              {
+                "title": "Naming variants （變種的命名）",
+                "depth": 2,
+                "id": "naming-variants"
+              },
+              {
+                "title": "Element variants 元素變種",
+                "depth": 2,
+                "id": "element-variants-yuan"
+              },
+              {
+                "title": "Dash prefixes 分號做為前綴",
+                "depth": 2,
+                "id": "dash-prefixes"
+              }
+            ]
+          },
+          {
+            "title": "Nested components",
+            "source": "docs/nested-components.md",
+            "url": "nested-components.html",
+            "slug": "nested-components",
+            "headings": [
+              {
+                "title": "Variants",
+                "depth": 2,
+                "id": "variants"
+              },
+              {
+                "title": "Simplifying nested components",
+                "depth": 2,
+                "id": "simplifying-nested-components"
+              }
+            ]
+          },
+          {
+            "title": "Layouts",
+            "source": "docs/layouts.md",
+            "url": "layouts.html",
+            "slug": "layouts",
+            "headings": [
+              {
+                "title": "Avoid positioning properties 要避開座標屬性",
+                "depth": 2,
+                "id": "avoid-positioning-properties"
+              },
+              {
+                "title": "Fixed dimensions 固定尺寸",
+                "depth": 2,
+                "id": "fixed-dimensions"
+              },
+              {
+                "title": "Define positioning in parents 在父節點定義位置",
+                "depth": 2,
+                "id": "define-positioning-in-parents"
+              }
+            ]
+          },
+          {
+            "title": "Helpers",
+            "source": "docs/helpers.md",
+            "url": "helpers.html",
+            "slug": "helpers",
+            "headings": [
+              {
+                "title": "Helpers 的命名",
+                "depth": 2,
+                "id": "helpers"
+              },
+              {
+                "title": "整理 helpers",
+                "depth": 2,
+                "id": "helpers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "關於架構(Structure)",
+        "sections": [
+          {
+            "title": "CSS 架構",
+            "source": "docs/css-structure.md",
+            "url": "css-structure.html",
+            "slug": "css-structure",
+            "headings": [
+              {
+                "title": "One component per file 一個元件一個檔案",
+                "depth": 2,
+                "id": "one-component-per-file-yuan"
+              },
+              {
+                "title": "Use glob matching 使用全域配對",
+                "depth": 2,
+                "id": "use-glob-matching"
+              },
+              {
+                "title": "Avoid over-nesting 避免過度的巢狀架構",
+                "depth": 2,
+                "id": "avoid-over-nesting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "備註(Notes)",
+        "sections": [
+          {
+            "title": "Pitfalls",
+            "source": "docs/pitfalls.md",
+            "url": "pitfalls.html",
+            "slug": "pitfalls",
+            "headings": [
+              {
+                "title": "Bleeding through nested components",
+                "depth": 2,
+                "id": "bleeding-through-nested-components"
+              }
+            ]
+          },
+          {
+            "title": "Apprehensions",
+            "source": "docs/apprehensions.md",
+            "url": "apprehensions.html",
+            "slug": "apprehensions"
+          },
+          {
+            "title": "Other resources",
+            "source": "docs/other-resources.md",
+            "url": "other-resources.html",
+            "slug": "other-resources",
+            "headings": [
+              {
+                "title": "Other solutions",
+                "depth": 2,
+                "id": "other-solutions",
+                "headings": [
+                  {
+                    "title": "BEM",
+                    "depth": 3,
+                    "id": "bem"
+                  }
+                ]
+              },
+              {
+                "title": "Terminologies",
+                "depth": 2,
+                "id": "terminologies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "總結",
+        "source": "docs/summary.md",
+        "url": "summary.html",
+        "slug": "summary"
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "JSON 精要",
+      "slug": "index",
+      "headings": [
+        {
+          "title": "引言",
+          "depth": 2,
+          "id": ""
+        }
+      ]
+    },
+    "components.html": {
+      "source": "docs/components.md",
+      "title": "第一章：什麼是 JSON?",
+      "slug": "components",
+      "headings": [
+        {
+          "title": "Naming components 元件命名",
+          "depth": 2,
+          "id": "naming-components-yuan"
+        }
+      ]
+    },
+    "elements.html": {
+      "source": "docs/elements.md",
+      "title": "Elements",
+      "slug": "elements",
+      "headings": [
+        {
+          "title": "Naming elements 元素的命名",
+          "depth": 2,
+          "id": "naming-elements-yuan"
+        },
+        {
+          "title": "Element selectors 元素選擇器",
+          "depth": 2,
+          "id": "element-selectors-yuan"
+        },
+        {
+          "title": "On multiple words 在多個單字上",
+          "depth": 2,
+          "id": "on-multiple-words"
+        },
+        {
+          "title": "Avoid tag selectors 避開標籤 (tag) 選擇器",
+          "depth": 2,
+          "id": "avoid-tag-selectors-(tag)"
+        }
+      ]
+    },
+    "variants.html": {
+      "source": "docs/variants.md",
+      "title": "Variants",
+      "slug": "variants",
+      "headings": [
+        {
+          "title": "Naming variants （變種的命名）",
+          "depth": 2,
+          "id": "naming-variants"
+        },
+        {
+          "title": "Element variants 元素變種",
+          "depth": 2,
+          "id": "element-variants-yuan"
+        },
+        {
+          "title": "Dash prefixes 分號做為前綴",
+          "depth": 2,
+          "id": "dash-prefixes"
+        }
+      ]
+    },
+    "nested-components.html": {
+      "source": "docs/nested-components.md",
+      "title": "Nested components",
+      "slug": "nested-components",
+      "headings": [
+        {
+          "title": "Variants",
+          "depth": 2,
+          "id": "variants"
+        },
+        {
+          "title": "Simplifying nested components",
+          "depth": 2,
+          "id": "simplifying-nested-components"
+        }
+      ]
+    },
+    "layouts.html": {
+      "source": "docs/layouts.md",
+      "title": "Layouts",
+      "slug": "layouts",
+      "headings": [
+        {
+          "title": "Avoid positioning properties 要避開座標屬性",
+          "depth": 2,
+          "id": "avoid-positioning-properties"
+        },
+        {
+          "title": "Fixed dimensions 固定尺寸",
+          "depth": 2,
+          "id": "fixed-dimensions"
+        },
+        {
+          "title": "Define positioning in parents 在父節點定義位置",
+          "depth": 2,
+          "id": "define-positioning-in-parents"
+        }
+      ]
+    },
+    "helpers.html": {
+      "source": "docs/helpers.md",
+      "title": "Helpers",
+      "slug": "helpers",
+      "headings": [
+        {
+          "title": "Helpers 的命名",
+          "depth": 2,
+          "id": "helpers"
+        },
+        {
+          "title": "整理 helpers",
+          "depth": 2,
+          "id": "helpers"
+        }
+      ]
+    },
+    "css-structure.html": {
+      "source": "docs/css-structure.md",
+      "title": "CSS 架構",
+      "slug": "css-structure",
+      "headings": [
+        {
+          "title": "One component per file 一個元件一個檔案",
+          "depth": 2,
+          "id": "one-component-per-file-yuan"
+        },
+        {
+          "title": "Use glob matching 使用全域配對",
+          "depth": 2,
+          "id": "use-glob-matching"
+        },
+        {
+          "title": "Avoid over-nesting 避免過度的巢狀架構",
+          "depth": 2,
+          "id": "avoid-over-nesting"
+        }
+      ]
+    },
+    "pitfalls.html": {
+      "source": "docs/pitfalls.md",
+      "title": "Pitfalls",
+      "slug": "pitfalls",
+      "headings": [
+        {
+          "title": "Bleeding through nested components",
+          "depth": 2,
+          "id": "bleeding-through-nested-components"
+        }
+      ]
+    },
+    "apprehensions.html": {
+      "source": "docs/apprehensions.md",
+      "title": "Apprehensions",
+      "slug": "apprehensions"
+    },
+    "other-resources.html": {
+      "source": "docs/other-resources.md",
+      "title": "Other resources",
+      "slug": "other-resources",
+      "headings": [
+        {
+          "title": "Other solutions",
+          "depth": 2,
+          "id": "other-solutions",
+          "headings": [
+            {
+              "title": "BEM",
+              "depth": 3,
+              "id": "bem"
+            }
+          ]
+        },
+        {
+          "title": "Terminologies",
+          "depth": 2,
+          "id": "terminologies"
+        }
+      ]
+    },
+    "summary.html": {
+      "source": "docs/summary.md",
+      "title": "總結",
+      "slug": "summary"
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/components.md": "components.html",
+    "docs/elements.md": "elements.html",
+    "docs/variants.md": "variants.html",
+    "docs/nested-components.md": "nested-components.html",
+    "docs/layouts.md": "layouts.html",
+    "docs/helpers.md": "helpers.html",
+    "docs/css-structure.md": "css-structure.html",
+    "docs/pitfalls.md": "pitfalls.html",
+    "docs/apprehensions.md": "apprehensions.html",
+    "docs/other-resources.md": "other-resources.html",
+    "docs/summary.md": "summary.html",
+    "docs/docpress.json": "docpress.json",
+    "docs/images/component-elements.png": "images/component-elements.png",
+    "docs/images/component-example.png": "images/component-example.png",
+    "docs/images/component-modifiers.png": "images/component-modifiers.png",
+    "docs/images/component-nesting.png": "images/component-nesting.png",
+    "docs/images/layouts.png": "images/layouts.png"
+  }
+}
