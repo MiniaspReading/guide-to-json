@@ -1,4 +1,6 @@
 #第一章 什麼是 JSON ?
+
+<!-- ![](images/component-example.png) 可以塞圖 -->
  
  JSON 是資料交換的格式。
  是 Javascript Object Notation 的縮寫。
@@ -31,3 +33,5 @@
 * JSON 與程式設計語言無關 ( 沒有要求要使用 Javascript )
 * JSON 由 Javascript 的物件實字記號法發而來 ( 重點在於記號法一詞 )
 * JSON 以對程式設計共通的概念友善的方式表示資料
+[Continue 繼續 →](elements.md)
+ <!-- {p:.pull-box} -->
