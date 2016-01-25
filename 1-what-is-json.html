@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>第一章：JSON 是什麼?</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-1-what-is-json">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="json">&#x7B2C;&#x4E00;&#x7AE0;&#xFF1A; &#x4EC0;&#x9EBC;&#x662F; JSON ?</h1>
+<!-- ![](images/component-example.png) 可以塞圖 -->
+<p>JSON &#x662F;&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x7684;&#x683C;&#x5F0F;&#x3002;
+&#x662F; Javascript Object Notation &#x7684;&#x7E2E;&#x5BEB;&#x3002;
+&#x5148;&#x5B78; Javascript &#x518D;&#x5B78; JSON &#x6703;&#x6709;&#x5E6B;&#x52A9;&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x662F; Javascript &#x884D;&#x751F;&#x51FA;&#x7684;&#x4E00;&#x9805;&#x529F;&#x80FD;&#x3002;
+JSON &#x662F;&#x6839;&#x64DA; JavaScript &#x7684;&#x7269;&#x4EF6;&#x5BE6;&#x5B57; (object literal) &#x767C;&#x5C55;&#x7684;&#x3002;</p>
+<h2 id="1-1">1-1 &#x70BA;&#x4F55;&#x4EE5;&#x6B64;&#x547D;&#x540D;&#xFF1F;</h2>
+<p>&#x5982;&#x679C;&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x683C;&#x5F0F;&#x8207;&#x8A9E;&#x8A00;&#x7121;&#x95DC;&#xFF0C;&#x5247;&#x4E0D;&#x50C5;&#x4EE5;&#x55AE;&#x4E00;&#x8A9E;&#x8A00;&#x884D;&#x751F;&#x51FA;&#x7684;&#x8CC7;&#x6599;&#x683C;&#x5F0F;&#x4F3C;&#x4E4E;&#x5F88;&#x77DB;&#x76FE;&#xFF0C;&#x9084;&#x547D;&#x540D;&#xFF1A;Javascript Object Notation&#xFF0C;&#x70BA;&#x4EC0;&#x9EBC;&#xFF1F;</p>
+<h2 id="1-2">1-2 &#x627E;&#x51FA;&#x5171;&#x540C;&#x9EDE;</h2>
+<p>&#x5728;&#x771F;&#x5BE6;&#x4E16;&#x754C;&#x4E2D;&#x6709;&#x6578;&#x4EE5;&#x767E;&#x8A08;&#x7684;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x8A9E;&#x8A00;&#xFF0C;&#x6709;&#x4E9B;&#x8A9E;&#x8A00;&#x6BD4;&#x5176;&#x4ED6;&#x8A9E;&#x8A00;&#x66F4;&#x5E38;&#x898B;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x60C5;&#x6CC1;&#x5404;&#x7570;&#x3002;&#x4E3B;&#x4FEE;&#x96FB;&#x8166;&#x79D1;&#x5B78;&#x7684;&#x5927;&#x5B78;&#x751F;&#x5728;&#x70BA;&#x5DE5;&#x4F5C;&#x6E96;&#x5099;&#x6642;&#x4E0D;&#x6703;&#x5B78;&#x7FD2;&#x6240;&#x6709;&#x8A9E;&#x8A00;&#xFF0C;&#x5B78;&#x751F;&#x901A;&#x5E38;&#x5F9E;&#x4E00;&#x500B;&#x8A9E;&#x8A00;&#x958B;&#x59CB;&#xFF0C;&#x5C0D;&#x65BC;&#x5B78;&#x7FD2;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x6982;&#x5FF5;&#x4F86;&#x8AAA;&#xFF0C;&#x8A9E;&#x8A00;&#x672C;&#x8EAB;&#x4E0D;&#x662F;&#x90A3;&#x9EBC;&#x91CD;&#x8981;&#x3002;&#x4E00;&#x65E6;&#x5B78;&#x751F;&#x638C;&#x63E1;&#x4E86;&#x9019;&#x4E9B;&#x6982;&#x5FF5;&#xFF0C;&#x4ED6;&#x5011;&#x53EF;&#x4EE5;&#x8F15;&#x6613;&#x5730;&#x900F;&#x904E;&#x8FA8;&#x8B58;&#x5171;&#x901A;&#x529F;&#x80FD;&#x8207;&#x7279;&#x5FB5;&#x7684;&#x80FD;&#x529B;&#x4F86;&#x5B78;&#x7FD2;&#x5176;&#x4ED6;&#x8A9E;&#x8A00;&#x3002;</p>
+<h2 id="1-3">1-3 &#x53EF;&#x651C;&#x6027;</h2>
+<p>&#x6216;&#x8AAA;&#x662F;&#x5728;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x8207;&#x7CFB;&#x7D71;&#x9593;&#x8F49;&#x79FB;&#x8CC7;&#x8A0A;&#x7684;&#x76F8;&#x5BB9;&#x6027;&#xFF0C;&#x662F;&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x683C;&#x5F0F;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x6A19;&#x3002;</p>
+<h2 id="1-4">1-4 &#x91CD;&#x8981;&#x8A5E;&#x5F59;&#x8207;&#x6982;&#x5FF5;</h2>
+<ul>
+<li>JSON
+<ul>
+<li>Javascript Object Notation</li>
+</ul>
+</li>
+<li>&#x8A18;&#x865F;&#x6CD5;
+<ul>
+<li>&#x4EE5;&#x5B57;&#x5143;&#x8868;&#x793A;&#x6578;&#x5B57;&#x6216;&#x5B57;&#x8A5E;&#x7B49;&#x8CC7;&#x6599;&#x7684;&#x7CFB;&#x7D71;</li>
+</ul>
+</li>
+<li>&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x683C;&#x5F0F;
+<ul>
+<li>&#x5728;&#x5E73;&#x53F0;&#x6216;&#x7CFB;&#x7D71;&#x9593;&#x4EA4;&#x63DB;&#x8CC7;&#x6599;&#x7684;&#x6587;&#x5B57;</li>
+</ul>
+</li>
+<li>&#x53EF;&#x651C;&#x6027;
+<ul>
+<li>&#x4EE5;&#x7CFB;&#x7D71;&#x96D9;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x5169;&#x8005;&#x9593;&#x8F49;&#x79FB;&#x8CC7;&#x8A0A;</li>
+</ul>
+</li>
+</ul>
+<br>
+<p>&#x6211;&#x5011;&#x9084;&#x8A0E;&#x8AD6;&#x5230;&#x4EE5;&#x4E0B;&#x7684;&#x6982;&#x5FF5;&#xFF1A;</p>
+<ul>
+<li>JSON &#x662F;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x683C;&#x5F0F;</li>
+<li>JSON &#x8207;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x8A9E;&#x8A00;&#x7121;&#x95DC; ( &#x6C92;&#x6709;&#x8981;&#x6C42;&#x8981;&#x4F7F;&#x7528; Javascript )</li>
+<li>JSON &#x7531; Javascript &#x7684;&#x7269;&#x4EF6;&#x5BE6;&#x5B57;&#x8A18;&#x865F;&#x6CD5;&#x767C;&#x800C;&#x4F86; ( &#x91CD;&#x9EDE;&#x5728;&#x65BC;&#x8A18;&#x865F;&#x6CD5;&#x4E00;&#x8A5E; )</li>
+<li>JSON &#x4EE5;&#x5C0D;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x5171;&#x901A;&#x7684;&#x6982;&#x5FF5;&#x53CB;&#x5584;&#x7684;&#x65B9;&#x5F0F;&#x8868;&#x793A;&#x8CC7;&#x6599;
+<a href="elements.html">Continue &#x7E7C;&#x7E8C; &#x2192;</a></li>
+</ul>
+ <!-- {p:.pull-box} -->
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="index.html"><span class="title">JSON 精要讀書紀錄</span></a></div>
+          <div class="right"><a href="elements.html"><span class="label">Next: </span><span class="title">第二章：JSON 語法</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要讀書紀錄</a>
+            </li>
+            <li class="menu-item -level-1"><a href="1-what-is-json.html" class="link title -active link-1-what-is-json">第一章：JSON 是什麼?</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#1-1" class="link title link-1-1">1-1 為何以此命名？</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#1-2" class="link title link-1-2">1-2 找出共同點</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#1-3" class="link title link-1-3">1-3 可攜性</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#1-4" class="link title link-1-4">1-4 重要詞彙與概念</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a href="elements.html" class="link title  link-elements">第二章：JSON 語法</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">可以視情況增減檔案</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="variants.html" class="link title  link-variants">第三章：JSON 資料型別</a>
+            </li>
+            <li class="menu-item -level-1"><a href="nested-components.html" class="link title  link-nested-components">第四章：JSON 結構描述</a>
+            </li>
+            <li class="menu-item -level-1"><a href="layouts.html" class="link title  link-layouts">第五章：JSON 安全考量</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers">第六章：JavaScript 的 XML HttpRequest 與 API</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers-2">第七章：JSON 與用戶端架構</a>
+            </li>
+            <li class="menu-item -level-1"><a href="8-json-and-nosql.html" class="link title  link-8-json-and-nosql">第八章：JSON 與 NoSQL</a>
+            </li>
+            <li class="menu-item -level-1"><a href="8-json-and-nosql.html" class="link title  link-8-json-and-nosql-2">第九章：伺服器端的 JSON</a>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">第十章：結論</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

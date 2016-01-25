@@ -2,23 +2,95 @@
   "toc": {
     "sections": [
       {
-        "title": "JSON 精要",
+        "title": "JSON 精要讀書紀錄",
         "source": "README.md",
         "url": "index.html",
         "slug": "index",
         "headings": [
           {
-            "title": "引言",
+            "title": "i. 前言",
             "depth": 2,
-            "id": ""
+            "id": "i."
+          },
+          {
+            "title": "ii. 閱讀對象",
+            "depth": 2,
+            "id": "ii."
+          },
+          {
+            "title": "iii. 學習 JSON",
+            "depth": 2,
+            "id": "iii.-json",
+            "headings": [
+              {
+                "title": "技術",
+                "depth": 3,
+                "id": ""
+              }
+            ]
           }
         ]
       },
       {
-        "title": "章節(Components)",
+        "title": "第一章：JSON 是什麼?",
+        "source": "docs/1-what-is-json.md",
+        "expand": true,
+        "url": "1-what-is-json.html",
+        "slug": "1-what-is-json",
+        "headings": [
+          {
+            "title": "1-1 為何以此命名？",
+            "depth": 2,
+            "id": "1-1"
+          },
+          {
+            "title": "1-2 找出共同點",
+            "depth": 2,
+            "id": "1-2"
+          },
+          {
+            "title": "1-3 可攜性",
+            "depth": 2,
+            "id": "1-3"
+          },
+          {
+            "title": "1-4 重要詞彙與概念",
+            "depth": 2,
+            "id": "1-4"
+          }
+        ]
+      },
+      {
+        "title": "第二章：JSON 語法",
+        "source": "docs/elements.md",
+        "expand": true,
+        "url": "elements.html",
+        "slug": "elements",
+        "headings": [
+          {
+            "title": "Naming elements 元素的命名",
+            "depth": 2,
+            "id": "naming-elements-yuan"
+          },
+          {
+            "title": "Element selectors 元素選擇器",
+            "depth": 2,
+            "id": "element-selectors-yuan"
+          },
+          {
+            "title": "On multiple words 在多個單字上",
+            "depth": 2,
+            "id": "on-multiple-words"
+          },
+          {
+            "title": "Avoid tag selectors 避開標籤 (tag) 選擇器",
+            "depth": 2,
+            "id": "avoid-tag-selectors-(tag)"
+          }
+        ],
         "sections": [
           {
-            "title": "第一章：什麼是 JSON?",
+            "title": "可以視情況增減檔案",
             "source": "docs/components.md",
             "url": "components.html",
             "slug": "components",
@@ -29,199 +101,127 @@
                 "id": "naming-components-yuan"
               }
             ]
+          }
+        ]
+      },
+      {
+        "title": "第三章：JSON 資料型別",
+        "source": "docs/variants.md",
+        "expand": true,
+        "url": "variants.html",
+        "slug": "variants",
+        "headings": [
+          {
+            "title": "Naming variants （變種的命名）",
+            "depth": 2,
+            "id": "naming-variants"
           },
           {
-            "title": "Elements",
-            "source": "docs/elements.md",
-            "url": "elements.html",
-            "slug": "elements",
-            "headings": [
-              {
-                "title": "Naming elements 元素的命名",
-                "depth": 2,
-                "id": "naming-elements-yuan"
-              },
-              {
-                "title": "Element selectors 元素選擇器",
-                "depth": 2,
-                "id": "element-selectors-yuan"
-              },
-              {
-                "title": "On multiple words 在多個單字上",
-                "depth": 2,
-                "id": "on-multiple-words"
-              },
-              {
-                "title": "Avoid tag selectors 避開標籤 (tag) 選擇器",
-                "depth": 2,
-                "id": "avoid-tag-selectors-(tag)"
-              }
-            ]
+            "title": "Element variants 元素變種",
+            "depth": 2,
+            "id": "element-variants-yuan"
           },
+          {
+            "title": "Dash prefixes 分號做為前綴",
+            "depth": 2,
+            "id": "dash-prefixes"
+          }
+        ]
+      },
+      {
+        "title": "第四章：JSON 結構描述",
+        "source": "docs/nested-components.md",
+        "expand": true,
+        "url": "nested-components.html",
+        "slug": "nested-components",
+        "headings": [
           {
             "title": "Variants",
-            "source": "docs/variants.md",
-            "url": "variants.html",
-            "slug": "variants",
-            "headings": [
-              {
-                "title": "Naming variants （變種的命名）",
-                "depth": 2,
-                "id": "naming-variants"
-              },
-              {
-                "title": "Element variants 元素變種",
-                "depth": 2,
-                "id": "element-variants-yuan"
-              },
-              {
-                "title": "Dash prefixes 分號做為前綴",
-                "depth": 2,
-                "id": "dash-prefixes"
-              }
-            ]
+            "depth": 2,
+            "id": "variants"
           },
           {
-            "title": "Nested components",
-            "source": "docs/nested-components.md",
-            "url": "nested-components.html",
-            "slug": "nested-components",
-            "headings": [
-              {
-                "title": "Variants",
-                "depth": 2,
-                "id": "variants"
-              },
-              {
-                "title": "Simplifying nested components",
-                "depth": 2,
-                "id": "simplifying-nested-components"
-              }
-            ]
-          },
-          {
-            "title": "Layouts",
-            "source": "docs/layouts.md",
-            "url": "layouts.html",
-            "slug": "layouts",
-            "headings": [
-              {
-                "title": "Avoid positioning properties 要避開座標屬性",
-                "depth": 2,
-                "id": "avoid-positioning-properties"
-              },
-              {
-                "title": "Fixed dimensions 固定尺寸",
-                "depth": 2,
-                "id": "fixed-dimensions"
-              },
-              {
-                "title": "Define positioning in parents 在父節點定義位置",
-                "depth": 2,
-                "id": "define-positioning-in-parents"
-              }
-            ]
-          },
-          {
-            "title": "Helpers",
-            "source": "docs/helpers.md",
-            "url": "helpers.html",
-            "slug": "helpers",
-            "headings": [
-              {
-                "title": "Helpers 的命名",
-                "depth": 2,
-                "id": "helpers"
-              },
-              {
-                "title": "整理 helpers",
-                "depth": 2,
-                "id": "helpers"
-              }
-            ]
+            "title": "Simplifying nested components",
+            "depth": 2,
+            "id": "simplifying-nested-components"
           }
         ]
       },
       {
-        "title": "關於架構(Structure)",
-        "sections": [
+        "title": "第五章：JSON 安全考量",
+        "source": "docs/layouts.md",
+        "expand": true,
+        "url": "layouts.html",
+        "slug": "layouts",
+        "headings": [
           {
-            "title": "CSS 架構",
-            "source": "docs/css-structure.md",
-            "url": "css-structure.html",
-            "slug": "css-structure",
-            "headings": [
-              {
-                "title": "One component per file 一個元件一個檔案",
-                "depth": 2,
-                "id": "one-component-per-file-yuan"
-              },
-              {
-                "title": "Use glob matching 使用全域配對",
-                "depth": 2,
-                "id": "use-glob-matching"
-              },
-              {
-                "title": "Avoid over-nesting 避免過度的巢狀架構",
-                "depth": 2,
-                "id": "avoid-over-nesting"
-              }
-            ]
+            "title": "Avoid positioning properties 要避開座標屬性",
+            "depth": 2,
+            "id": "avoid-positioning-properties"
+          },
+          {
+            "title": "Fixed dimensions 固定尺寸",
+            "depth": 2,
+            "id": "fixed-dimensions"
+          },
+          {
+            "title": "Define positioning in parents 在父節點定義位置",
+            "depth": 2,
+            "id": "define-positioning-in-parents"
           }
         ]
       },
       {
-        "title": "備註(Notes)",
-        "sections": [
+        "title": "第六章：JavaScript 的 XML HttpRequest 與 API",
+        "source": "docs/helpers.md",
+        "expand": true,
+        "url": "helpers.html",
+        "slug": "helpers",
+        "headings": [
           {
-            "title": "Pitfalls",
-            "source": "docs/pitfalls.md",
-            "url": "pitfalls.html",
-            "slug": "pitfalls",
-            "headings": [
-              {
-                "title": "Bleeding through nested components",
-                "depth": 2,
-                "id": "bleeding-through-nested-components"
-              }
-            ]
+            "title": "Helpers 的命名",
+            "depth": 2,
+            "id": "helpers"
           },
           {
-            "title": "Apprehensions",
-            "source": "docs/apprehensions.md",
-            "url": "apprehensions.html",
-            "slug": "apprehensions"
-          },
-          {
-            "title": "Other resources",
-            "source": "docs/other-resources.md",
-            "url": "other-resources.html",
-            "slug": "other-resources",
-            "headings": [
-              {
-                "title": "Other solutions",
-                "depth": 2,
-                "id": "other-solutions",
-                "headings": [
-                  {
-                    "title": "BEM",
-                    "depth": 3,
-                    "id": "bem"
-                  }
-                ]
-              },
-              {
-                "title": "Terminologies",
-                "depth": 2,
-                "id": "terminologies"
-              }
-            ]
+            "title": "整理 helpers",
+            "depth": 2,
+            "id": "helpers"
           }
         ]
       },
       {
-        "title": "總結",
+        "title": "第七章：JSON 與用戶端架構",
+        "source": "docs/helpers.md",
+        "expand": true,
+        "url": "helpers.html",
+        "slug": "helpers-2"
+      },
+      {
+        "title": "第八章：JSON 與 NoSQL",
+        "source": "docs/8-json-and-nosql.md",
+        "expand": true,
+        "url": "8-json-and-nosql.html",
+        "slug": "8-json-and-nosql",
+        "headings": [
+          {
+            "title": "CouchDB 資料庫",
+            "depth": 2,
+            "id": "couchdb"
+          }
+        ]
+      },
+      {
+        "title": "第九章：伺服器端的 JSON",
+        "source": "docs/8-json-and-nosql.md",
+        "expand": true,
+        "url": "8-json-and-nosql.html",
+        "slug": "8-json-and-nosql-2"
+      },
+      {
+        "title": "第十章：結論",
         "source": "docs/summary.md",
+        "expand": true,
         "url": "summary.html",
         "slug": "summary"
       }
@@ -230,31 +230,63 @@
   "index": {
     "index.html": {
       "source": "README.md",
-      "title": "JSON 精要",
+      "title": "JSON 精要讀書紀錄",
       "slug": "index",
       "headings": [
         {
-          "title": "引言",
+          "title": "i. 前言",
           "depth": 2,
-          "id": ""
+          "id": "i."
+        },
+        {
+          "title": "ii. 閱讀對象",
+          "depth": 2,
+          "id": "ii."
+        },
+        {
+          "title": "iii. 學習 JSON",
+          "depth": 2,
+          "id": "iii.-json",
+          "headings": [
+            {
+              "title": "技術",
+              "depth": 3,
+              "id": ""
+            }
+          ]
         }
       ]
     },
-    "components.html": {
-      "source": "docs/components.md",
-      "title": "第一章：什麼是 JSON?",
-      "slug": "components",
+    "1-what-is-json.html": {
+      "source": "docs/1-what-is-json.md",
+      "title": "第一章：JSON 是什麼?",
+      "slug": "1-what-is-json",
       "headings": [
         {
-          "title": "Naming components 元件命名",
+          "title": "1-1 為何以此命名？",
           "depth": 2,
-          "id": "naming-components-yuan"
+          "id": "1-1"
+        },
+        {
+          "title": "1-2 找出共同點",
+          "depth": 2,
+          "id": "1-2"
+        },
+        {
+          "title": "1-3 可攜性",
+          "depth": 2,
+          "id": "1-3"
+        },
+        {
+          "title": "1-4 重要詞彙與概念",
+          "depth": 2,
+          "id": "1-4"
         }
       ]
     },
     "elements.html": {
       "source": "docs/elements.md",
-      "title": "Elements",
+      "title": "第二章：JSON 語法",
       "slug": "elements",
       "headings": [
         {
@@ -279,9 +311,21 @@
         }
       ]
     },
+    "components.html": {
+      "source": "docs/components.md",
+      "title": "可以視情況增減檔案",
+      "slug": "components",
+      "headings": [
+        {
+          "title": "Naming components 元件命名",
+          "depth": 2,
+          "id": "naming-components-yuan"
+        }
+      ]
+    },
     "variants.html": {
       "source": "docs/variants.md",
-      "title": "Variants",
+      "title": "第三章：JSON 資料型別",
       "slug": "variants",
       "headings": [
         {
@@ -303,7 +347,7 @@
     },
     "nested-components.html": {
       "source": "docs/nested-components.md",
-      "title": "Nested components",
+      "title": "第四章：JSON 結構描述",
       "slug": "nested-components",
       "headings": [
         {
@@ -320,7 +364,7 @@
     },
     "layouts.html": {
       "source": "docs/layouts.md",
-      "title": "Layouts",
+      "title": "第五章：JSON 安全考量",
       "slug": "layouts",
       "headings": [
         {
@@ -342,102 +386,30 @@
     },
     "helpers.html": {
       "source": "docs/helpers.md",
-      "title": "Helpers",
-      "slug": "helpers",
-      "headings": [
-        {
-          "title": "Helpers 的命名",
-          "depth": 2,
-          "id": "helpers"
-        },
-        {
-          "title": "整理 helpers",
-          "depth": 2,
-          "id": "helpers"
-        }
-      ]
+      "title": "第七章：JSON 與用戶端架構",
+      "slug": "helpers-2"
     },
-    "css-structure.html": {
-      "source": "docs/css-structure.md",
-      "title": "CSS 架構",
-      "slug": "css-structure",
-      "headings": [
-        {
-          "title": "One component per file 一個元件一個檔案",
-          "depth": 2,
-          "id": "one-component-per-file-yuan"
-        },
-        {
-          "title": "Use glob matching 使用全域配對",
-          "depth": 2,
-          "id": "use-glob-matching"
-        },
-        {
-          "title": "Avoid over-nesting 避免過度的巢狀架構",
-          "depth": 2,
-          "id": "avoid-over-nesting"
-        }
-      ]
-    },
-    "pitfalls.html": {
-      "source": "docs/pitfalls.md",
-      "title": "Pitfalls",
-      "slug": "pitfalls",
-      "headings": [
-        {
-          "title": "Bleeding through nested components",
-          "depth": 2,
-          "id": "bleeding-through-nested-components"
-        }
-      ]
-    },
-    "apprehensions.html": {
-      "source": "docs/apprehensions.md",
-      "title": "Apprehensions",
-      "slug": "apprehensions"
-    },
-    "other-resources.html": {
-      "source": "docs/other-resources.md",
-      "title": "Other resources",
-      "slug": "other-resources",
-      "headings": [
-        {
-          "title": "Other solutions",
-          "depth": 2,
-          "id": "other-solutions",
-          "headings": [
-            {
-              "title": "BEM",
-              "depth": 3,
-              "id": "bem"
-            }
-          ]
-        },
-        {
-          "title": "Terminologies",
-          "depth": 2,
-          "id": "terminologies"
-        }
-      ]
+    "8-json-and-nosql.html": {
+      "source": "docs/8-json-and-nosql.md",
+      "title": "第九章：伺服器端的 JSON",
+      "slug": "8-json-and-nosql-2"
     },
     "summary.html": {
       "source": "docs/summary.md",
-      "title": "總結",
+      "title": "第十章：結論",
       "slug": "summary"
     }
   },
   "sources": {
     "README.md": "index.html",
-    "docs/components.md": "components.html",
+    "docs/1-what-is-json.md": "1-what-is-json.html",
     "docs/elements.md": "elements.html",
+    "docs/components.md": "components.html",
     "docs/variants.md": "variants.html",
     "docs/nested-components.md": "nested-components.html",
     "docs/layouts.md": "layouts.html",
     "docs/helpers.md": "helpers.html",
-    "docs/css-structure.md": "css-structure.html",
-    "docs/pitfalls.md": "pitfalls.html",
-    "docs/apprehensions.md": "apprehensions.html",
-    "docs/other-resources.md": "other-resources.html",
+    "docs/8-json-and-nosql.md": "8-json-and-nosql.html",
     "docs/summary.md": "summary.html",
     "docs/docpress.json": "docpress.json",
     "docs/images/component-elements.png": "images/component-elements.png",

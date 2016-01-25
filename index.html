@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
     <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
     <script src="assets/script.js?t=2bcc4b59"></script>
-    <title>JSON 精要</title>
+    <title>JSON 精要讀書紀錄</title>
     <meta name="viewport" content="width=device-width">
   </head>
   <body class="-menu-visible">
@@ -17,42 +17,60 @@
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><h5 style="display:none" id="github-.-rscss.io">&#x5F9E; Github &#x4E0A;&#x770B;&#x5230;&#x7684;&#x55CE;? &#x8A2A;&#x554F;&#x7DB2;&#x7AD9;&#x53EF;&#x7372;&#x5F97;&#x5B8C;&#x6574;&#x9AD4;&#x9A57;. <strong><a href="http://jeffwu85182.github.io/rscss/">rscss.io &#x2192;</a></strong></h5>
+        <div class="markdown-body"><h5 style="display:none" id="github-.-javascript-object-notation">&#x5F9E; Github &#x4E0A;&#x770B;&#x5230;&#x7684;&#x55CE;? &#x8A2A;&#x554F;&#x7DB2;&#x7AD9;&#x53EF;&#x7372;&#x5F97;&#x5B8C;&#x6574;&#x9AD4;&#x9A57;. <strong><a href="http://jeffwu85182.github.io/rscss/"> JavaScript Object Notation &#x7CBE;&#x8981; &#x8B80;&#x66F8;&#x6703;&#x7D00;&#x9304; &#x2192;</a></strong></h5>
 <hr style="display:none">
-<h1 class="massive-header -with-tagline" id="rscss">rscss</h1>
+<h1 class="massive-header -with-tagline" id="javascript-object-notation">JavaScript Object Notation &#x7CBE;&#x8981;</h1>
 <blockquote>
-<p>Styling CSS without losing&#xA0;your sanity <br>
-&#x5225;&#x8B93; CSS &#x547D;&#x540D;&#x4F7F;&#x4F60;&#x5931;&#x53BB;&#x7406;&#x667A;</p>
+<p>JSON &#x6838;&#x5FC3;&#x4E3B;&#x984C;&#x5C0E;&#x5F15; <br></p>
 </blockquote>
-<p>Reasonable System for CSS Stylesheet Structure.<br>
-&#x70BA;CSS&#x6A23;&#x5F0F;&#x8868;&#x5EFA;&#x7ACB;&#x6709;&#x7CFB;&#x7D71;&#x7684;&#x67B6;&#x69CB;<br>
-A set of simple ideas to guide your process of building maintainable CSS.<br>
-&#x4E00;&#x4E9B;&#x7C21;&#x55AE;&#x7684;&#x60F3;&#x6CD5;&#x4F86;&#x5F15;&#x5C0E;&#x4F60;&#x5EFA;&#x7ACB;&#x53EF;&#x7DAD;&#x8B77;&#x7684; CSS</p>
-<p>Introduction
-&#x5F15;&#x8A00;</p>
-<hr>
-<p>Any CSS greater than 1000 lines will get unwieldy. You&apos;ll eventually run into these common pitfalls:<br>
-&#x4EFB;&#x4F55;&#x5927;&#x65BC; 1000 &#x884C;&#x7684; CSS &#x6703;&#x8B8A;&#x5F97;&#x7B28;&#x91CD;&#x3002;&#x60A8;&#x4E00;&#x5B9A;&#x6703;&#x9047;&#x5230;&#x4E0B;&#x5217;&#x9019;&#x4E9B;&#x5E38;&#x898B;&#x7684;&#x554F;&#x984C;&#x3002;</p>
+<h2 id="i.">i. &#x524D;&#x8A00;</h2>
+<p>&#x672C;&#x66F8;&#x6C92;&#x6709;&#x63D0;&#x5230; JSON &#x767C;&#x5C55;&#x6B77;&#x53F2;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x95DC;&#x65BC;&#x73FE;&#x72C0;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x4E86;&#x89E3;&#x6B77;&#x53F2;&#xFF0C;Wikipedia &#x4E0A;&#x6709;&#x5F88;&#x68D2;&#x7684;<a href="https://en.wikipedia.org/wiki/JSON#History">&#x8AAA;&#x660E;</a>&#x3002;<br>
+&#x672C;&#x66F8;&#x7684;&#x76EE;&#x6A19;&#x662F; JSON &#x7684;&#x6838;&#x5FC3;&#x4E3B;&#x984C;&#xFF0C;&#x76F4;&#x6307;&#x91CD;&#x9EDE;&#x4E26;&#x8B93;&#x4F60;&#x80FD;&#x5F88;&#x5FEB;&#x7684;&#x4E0A;&#x624B;&#xFF0C;&#x9019;&#x662F;&#x70BA;&#x5FD9;&#x788C;&#x7684; IT &#x5C08;&#x696D;&#x4EBA;&#x58EB;&#x6240;&#x5BEB;&#x7684;&#x66F8;&#x3002;<br></p>
+<h2 id="ii.">ii. &#x95B1;&#x8B80;&#x5C0D;&#x8C61;</h2>
+<p>&#x672C;&#x66F8;&#x907F;&#x514D;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x8853;&#x8A9E;&#x6216;&#x70BA;&#x7DB2;&#x8DEF;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x521D;&#x5B78;&#x8005;&#x89E3;&#x91CB;&#x57FA;&#x790E;&#x6982;&#x5FF5;&#x3002;&#x800C;&#x662F;&#x5617;&#x8A66;&#x5C0D;&#x6240;&#x6709;&#x4EBA;&#x6E9D;&#x901A;&#xFF0C;&#x4F46;&#x5047;&#x8A2D;&#x4F60;&#x5DF2;&#x7D93;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x57FA;&#x790E;&#x77E5;&#x8B58;&#x3002;&#x82E5;&#x4F60;&#x525B;&#x958B;&#x59CB;&#x5B78;&#x7FD2;&#x7DB2;&#x8DEF;&#x958B;&#x767C;&#xFF0C;&#x9019;&#x4E0D;&#x61C9;&#x8A72;&#x662F;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x672C;&#x66F8;&#x3002;<br>
+&#x56E0;&#x6B64;&#x95B1;&#x8B80;&#x672C;&#x66F8;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x5148;&#x5177;&#x5099;&#x4EE5;&#x4E0B;&#x7684;&#x57FA;&#x672C;&#x77E5;&#x8B58;&#xFF1A;</p>
 <ul>
 <li>
-<p>&quot;What does this class mean? (&#x9019;&#x500B; class &#x6709;&#x4EC0;&#x9EBC;&#x610F;&#x601D;?)&quot;</p>
+<p><strong>HTML</strong></p>
+<ul>
+<li>&#x77E5;&#x9053; HTML &#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E26;&#x80FD;&#x5206;&#x8FA8; HTML &#x6587;&#x4EF6;&#x4E0A;&#x7684;&#x7D50;&#x69CB;&#x8207;&#x4E00;&#x4E9B;&#x6A19;&#x7C64;&#x3002;</li>
+</ul>
 </li>
 <li>
-<p>&quot;Is this class still being used? (&#x9019;&#x500B; class &#x662F;&#x5426;&#x6703;&#x88AB;&#x6301;&#x7E8C;&#x7684;&#x4F7F;&#x7528;&#x5230;?)&quot;</p>
+<p><strong>JavaScript</strong></p>
+<ul>
+<li>&#x77E5;&#x9053; JavaScript &#x7684;&#x529F;&#x80FD;&#x4E26;&#x77E5;&#x9053; <code>&lt;script&gt;</code> &#x6A19;&#x7C64;&#x7684;&#x529F;&#x80FD;&#x8207;&#x8B8A;&#x5316;&#x5F62;&#x5F0F;&#x3002;&#x521D;&#x5B78;&#x8005;&#x4E5F;&#x6C92;&#x554F;&#x984C;&#xFF0C;&#x7B46;&#x8005;&#x6703;&#x4FDD;&#x6301;&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;&#x7684;&#x7C21;&#x55AE;&#x3002;</li>
+</ul>
 </li>
 <li>
-<p>&quot;If I make a new class <code>green</code>, will there be a clash? (&#x5982;&#x679C;&#x6211;&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684; class &apos;green&apos;, &#x662F;&#x5426;&#x6703;&#x6709;&#x885D;&#x7A81;?)&quot;</p>
+<p><strong>&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x6982;&#x5FF5;</strong></p>
+<ul>
+<li>&#x7B46;&#x8005;&#x6703;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7C21;&#x55AE;&#x7684;&#x6982;&#x5FF5;&#x89E3;&#x91CB;&#x7D66;&#x65B0;&#x624B;&#xFF0C;&#x50CF;&#x662F;&#x7269;&#x4EF6;&#x8207;&#x9663;&#x5217;&#x7B49;&#x3002;&#x4F46;&#x82E5;&#x4F60;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x7684;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x7D93;&#x9A57;&#xFF0C;&#x5247;&#x9019;&#x672C;&#x66F8;&#x4E26;&#x4E0D;&#x9069;&#x5408;&#x4F60;&#x3002;</li>
+</ul>
 </li>
 </ul>
-<p><strong>rscss</strong> is an attempt to make sense of all these. It is not a framework. It&apos;s simply a set of ideas to guide your process of building maintainable CSS for any modern website or application. <br>
-<strong>rscss</strong> &#x8A66;&#x5716;&#x91D0;&#x6E05;&#x9019;&#x4E9B;&#x554F;&#x984C;&#x3002; &#x5B83;&#x4E0D;&#x662F;&#x4E00;&#x500B;&#x6846;&#x67B6;&#x3002;&#x4ED6;&#x662F;&#x4E00;&#x4E9B;&#x7C21;&#x55AE;&#x7684;&#x60F3;&#x6CD5;&#x4F86;&#x5F15;&#x5C0E;&#x4F60;&#xFF0C;&#x4F7F;&#x73FE;&#x4EE3;&#x5316;&#x7684;&#x7DB2;&#x7AD9;&#x6216;&#x61C9;&#x7528;&#x5EFA;&#x7ACB;&#x53EF;&#x7DAD;&#x8B77;&#x7684;CSS&#x3002;</p>
+<h2 id="iii.-json">iii. &#x5B78;&#x7FD2; JSON</h2>
+<p>&#x9019;&#x4E9B;&#x5E74;&#x4F86;&#x7B46;&#x8005;&#x7D93;&#x5E38;&#x5728;&#x6709;&#x6642;&#x9593;&#x58D3;&#x529B;&#x7684;&#x5C08;&#x6848;&#x4E2D;&#x9700;&#x8981;&#x5B78;&#x7FD2;&#x65B0;&#x6280;&#x8853;&#x3002;&#x56E0;&#x6B64;&#x8CB7;&#x4E86;&#x539A;&#x91CD;&#x7684;&#x53C3;&#x8003;&#x66F8;&#xFF0C;&#x505A;&#x7DF4;&#x7FD2;&#x984C;&#xFF0C;&#x5617;&#x8A66;&#x5438;&#x6536;&#x8CC7;&#x8A0A;&#x3002;&#x5728;&#x95B1;&#x8B80;&#x6578;&#x767E;&#x9801;&#x7684;&#x5167;&#x5BB9;&#x6642;&#xFF0C;&#x7B46;&#x8005;&#x6703;&#x5C0B;&#x627E;&#x8457;&#x4E09;&#x500B;&#x57FA;&#x672C;&#x554F;&#x984C;&#x7684;&#x7B54;&#x6848;&#xFF1A;</p>
+<ul>
+<li>&#x5B83;&#x662F;&#x4EC0;&#x9EBC;&#xFF1F;</li>
+<li>&#x6211;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1F;</li>
+<li>&#x58DE;&#x4EBA;&#x6703;&#x600E;&#x9EBC;&#x4F7F;&#x7528;&#xFF1F;</li>
+</ul>
+<p>&#x7B46;&#x8005;&#x5728;&#x64B0;&#x5BEB;&#x6B64;&#x66F8;&#x6642;&#x601D;&#x8003;&#x8457;&#x5982;&#x4F55;&#x76F4;&#x6307;&#x9019;&#x4E9B;&#x554F;&#x984C;&#xFF0C;&#x8B93;&#x4F60;&#x4E0D;&#x7528;&#x8B80;&#x4E00;&#x5927;&#x5806;&#x5167;&#x5BB9;&#x624D;&#x627E;&#x5230;&#x7B54;&#x6848;&#x3002;<br></p>
+<p>&#x5728;<strong>&#x7B2C;&#x4E00;&#x7AE0;&#x81F3;&#x7B2C;&#x56DB;&#x7AE0;</strong>&#x4E2D;&#xFF0C;&#x7B46;&#x8005;&#x5F9E;&#x4F4E;&#x968E;&#x958B;&#x59CB;&#x63A2;&#x7D22; JSON &#xFF0C;&#x5148;&#x56DE;&#x7B54;&#x7D42;&#x6975;&#x7684;&#x554F;&#x984C;&#xFF1A;&#x201C;&#x5B83;&#x662F;&#x4EC0;&#x9EBC;&#xFF1F;&#x201D;&#xFF0C;&#x7136;&#x5F8C;&#x6AA2;&#x8996;&#x8A9E;&#x6CD5;&#x3001;&#x8A9E;&#x6CD5;&#x9A57;&#x8B49;&#x3001;&#x8CC7;&#x6599;&#x578B;&#x5225;&#x3001;&#x4EE5;&#x53CA;&#x7D50;&#x69CB;&#x9A57;&#x8B49;&#x3002;<br></p>
+<p><strong>&#x7B2C;&#x4E94;&#x7AE0;</strong>&#x6703;&#x8A0E;&#x8AD6;&#x5B89;&#x5168;&#x6027;&#x7684;&#x91CD;&#x8981;&#x4E3B;&#x984C;&#xFF0C;&#x9019;&#x4E00;&#x7AE0;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x672C;&#x66F8;&#x5167;&#x5BB9;&#x4E2D;&#x7684;&#x7528;&#x6236;&#x7AEF;&#x8207;&#x4F3A;&#x670D;&#x5668;&#x7AEF;&#x7684;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#xFF0C;&#x9019;&#x4E00;&#x90E8;&#x4EFD;&#x56DE;&#x7B54;&#x201C;&#x58DE;&#x4EBA;&#x6703;&#x600E;&#x9EBC;&#x4F7F;&#x7528;&#x201D;&#x7684;&#x554F;&#x984C;&#x3002;<br></p>
+<p>&#x9019;&#x4E9B;&#x7AE0;&#x7BC0;&#x5305;&#x62EC;&#x4E86;&#x8A31;&#x591A; JSON &#x7684;&#x7BC4;&#x4F8B;&#x4EE5;&#x53CA;&#x8207; JSON &#x4E92;&#x52D5;&#x7684;&#x6280;&#x8853;&#x3002; <br></p>
+<p><strong>&#x7B2C;&#x516D;&#x7AE0;&#x81F3;&#x7B2C;&#x4E5D;&#x7AE0;</strong>&#x7684;&#x91CD;&#x8981;&#x5167;&#x5BB9;&#x5305;&#x62EC;&#xFF1A;</p>
+<h3 id="">&#x6280;&#x8853;</h3>
+<p>&#x50CF;&#x662F; jQuery&#x3001;AngularJS &#x8207; CouchDB &#x7B49;&#x6982;&#x5FF5;&#xFF0C;&#x9019;&#x4E9B;&#x4E3B;&#x984C;&#x90FD;&#x5927;&#x5230;&#x8981;&#x4EE5;&#xFF08;&#x4E14;&#x5DF2;&#x7D93;&#xFF09;&#x7528;&#x4E00;&#x6574;&#x672C;&#x66F8;&#x4F86;&#x8A0E;&#x8AD6;&#x3002;&#x7B46;&#x8005;&#x523B;&#x610F;&#x7701;&#x7565;&#x9019;&#x4E9B;&#x6280;&#x8853;&#x7684;&#x5B89;&#x88DD;&#x6307;&#x5F15;&#x8207;&#x6DF1;&#x5165;&#x8A0E;&#x8AD6;&#xFF0C;&#x91CD;&#x9EDE;&#x662F;&#x5728;&#x65BC;&#x986F;&#x793A;&#x9019;&#x4E9B;&#x6280;&#x8853;&#x5982;&#x4F55;&#x904B;&#x7528; JSON&#x3002;<br></p>
+<p>&#x82E5;&#x8981;&#x5E38;&#x8B58;&#x5BE6;&#x9A57;&#x4F7F;&#x7528;&#x9019;&#x4E9B;&#x6280;&#x8853;&#x7684;&#x7BC4;&#x4F8B;&#xFF0C;&#x4F60;&#x5FC5;&#x9808;&#x505A;&#x4E00;&#x4E9B;&#x7E41;&#x7463;&#x7684;&#x5DE5;&#x4F5C;&#x4EE5;&#x8A2D;&#x7F6E;&#x74B0;&#x5883;&#xFF0C;&#x7136;&#x800C;&#x7BC4;&#x4F8B;&#x672C;&#x8EAB;&#x537B;&#x5F88;&#x7C21;&#x55AE;&#x3002;&#x82E5;&#x4F60;&#x80FD;&#x5920;&#x8A2D;&#x7F6E;&#x597D;&#x57FA;&#x672C;&#x74B0;&#x5883;&#xFF0C;&#x5247;&#x61C9;&#x8A72;&#x80FD;&#x5920;&#x9032;&#x884C;&#x5BE6;&#x9A57;&#x3002;<br></p>
 <p class="pull-box">Let&apos;s get started by learning about components.
 <a href="components.html">Continue &#x7E7C;&#x7E8C; &#x2192;</a><br>
 &#x8B93;&#x6211;&#x5011;&#x5F9E;&#x4E86;&#x89E3;&#x5143;&#x4EF6;&#x958B;&#x59CB;&#x5427;!</p>
 <hr style="display:none">
 <p style="display:none">&#x539F;&#x4F5C;&#x8005;&#xFF1A;<br>
 <strong>rscss</strong> &#xA9; 2015+, Rico Sta. Cruz. Released under the <a href="http://mit-license.org/">MIT</a> License.<br>
-Authored and maintained by Rico Sta. Cruz with help from contributors (<a href="http://github.com/rstacruz/rscss/contributors">list</a>). <br></p>
+Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]). <br></p>
 <blockquote style="display:none">
 <p><a href="http://ricostacruz.com">ricostacruz.com</a> &#xA0;&#xB7;&#xA0;
 GitHub <a href="https://github.com/rstacruz">@rstacruz</a> &#xA0;&#xB7;&#xA0;
@@ -65,51 +83,49 @@ Twitter <a href="https://twitter.com/rstacruz">@rstacruz</a></p>
 
         </div>
         <div class="footer-nav">
-          <div class="right"><a href="components.html"><span class="label">Next: </span><span class="title">第一章：什麼是 JSON?</span></a></div>
+          <div class="right"><a href="1-what-is-json.html"><span class="label">Next: </span><span class="title">第一章：JSON 是什麼?</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
         <li class="menu-item -level-0 -parent">
           <ul class="submenu">
-            <li class="menu-item -level-1"><a href="index.html" class="link title -active link-index">JSON 精要</a>
+            <li class="menu-item -level-1"><a href="index.html" class="link title -active link-index">JSON 精要讀書紀錄</a>
               <ul class="headings heading-list">
-                <li class="heading-item -depth-2"><a href="#" class="hlink link-">引言</a>
+                <li class="heading-item -depth-2"><a href="#i." class="hlink link-i.">i. 前言</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#ii." class="hlink link-ii.">ii. 閱讀對象</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#iii.-json" class="hlink link-iii.-json">iii. 學習 JSON</a>
+                  <ul class="heading-list -depth-2">
+                    <li class="heading-item -depth-3"><a href="#" class="hlink link-">技術</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
-            <li class="menu-item -level-1 -parent"><span class="title">章節(Components)</span>
+            <li class="menu-item -level-1"><a href="1-what-is-json.html" class="link title  link-1-what-is-json">第一章：JSON 是什麼?</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a href="elements.html" class="link title  link-elements">第二章：JSON 語法</a>
               <ul class="submenu">
-                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">第一章：什麼是 JSON?</a>
-                </li>
-                <li class="menu-item -level-2"><a href="elements.html" class="link title  link-elements">Elements</a>
-                </li>
-                <li class="menu-item -level-2"><a href="variants.html" class="link title  link-variants">Variants</a>
-                </li>
-                <li class="menu-item -level-2"><a href="nested-components.html" class="link title  link-nested-components">Nested components</a>
-                </li>
-                <li class="menu-item -level-2"><a href="layouts.html" class="link title  link-layouts">Layouts</a>
-                </li>
-                <li class="menu-item -level-2"><a href="helpers.html" class="link title  link-helpers">Helpers</a>
+                <li class="menu-item -level-2"><a href="components.html" class="link title  link-components">可以視情況增減檔案</a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item -level-1 -parent"><span class="title">關於架構(Structure)</span>
-              <ul class="submenu">
-                <li class="menu-item -level-2"><a href="css-structure.html" class="link title  link-css-structure">CSS 架構</a>
-                </li>
-              </ul>
+            <li class="menu-item -level-1"><a href="variants.html" class="link title  link-variants">第三章：JSON 資料型別</a>
             </li>
-            <li class="menu-item -level-1 -parent"><span class="title">備註(Notes)</span>
-              <ul class="submenu">
-                <li class="menu-item -level-2"><a href="pitfalls.html" class="link title  link-pitfalls">Pitfalls</a>
-                </li>
-                <li class="menu-item -level-2"><a href="apprehensions.html" class="link title  link-apprehensions">Apprehensions</a>
-                </li>
-                <li class="menu-item -level-2"><a href="other-resources.html" class="link title  link-other-resources">Other resources</a>
-                </li>
-              </ul>
+            <li class="menu-item -level-1"><a href="nested-components.html" class="link title  link-nested-components">第四章：JSON 結構描述</a>
             </li>
-            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">總結</a>
+            <li class="menu-item -level-1"><a href="layouts.html" class="link title  link-layouts">第五章：JSON 安全考量</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers">第六章：JavaScript 的 XML HttpRequest 與 API</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers-2">第七章：JSON 與用戶端架構</a>
+            </li>
+            <li class="menu-item -level-1"><a href="8-json-and-nosql.html" class="link title  link-8-json-and-nosql">第八章：JSON 與 NoSQL</a>
+            </li>
+            <li class="menu-item -level-1"><a href="8-json-and-nosql.html" class="link title  link-8-json-and-nosql-2">第九章：伺服器端的 JSON</a>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">第十章：結論</a>
             </li>
           </ul>
         </li>
