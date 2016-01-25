@@ -20,14 +20,7 @@
           {
             "title": "iii. 學習 JSON",
             "depth": 2,
-            "id": "iii.-json",
-            "headings": [
-              {
-                "title": "技術",
-                "depth": 3,
-                "id": ""
-              }
-            ]
+            "id": "iii.-json"
           }
         ]
       },
@@ -246,14 +239,7 @@
         {
           "title": "iii. 學習 JSON",
           "depth": 2,
-          "id": "iii.-json",
-          "headings": [
-            {
-              "title": "技術",
-              "depth": 3,
-              "id": ""
-            }
-          ]
+          "id": "iii.-json"
         }
       ]
     },
