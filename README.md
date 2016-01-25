@@ -75,24 +75,19 @@ iii. 學習 JSON
 讓我們開始吧!
 [Continue 繼續 →](docs/1-what-is-json.md)<br>
 
+
 <!-- {p:.pull-box} -->
 
 ----
 <!-- {hr: style='display:none'} -->
-原作者：<br>
-**rscss** © 2015+, Rico Sta. Cruz. Released under the [MIT] License.<br>
-Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]). <br>
+書籍資訊：<br>
+**JavaScript Object Notation 精要** © 2015+, [Lindsay Bassett](https://github.com/lindsaybassett). <br>
 
 <!-- {p: style='display:none'} -->
 
-> [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
-> GitHub [@rstacruz](https://github.com/rstacruz) &nbsp;&middot;&nbsp;
-> Twitter [@rstacruz](https://twitter.com/rstacruz)
-
 ----
-原作：[@rstacruz](https://github.com/rstacruz)｜翻譯：[@jeffwu85182](https://github.com/jeffwu85182)
-[多奇數位創意有限公司](http://www.miniasp.com) <br>
-有任何建議歡迎提出，感謝! <br>
+原作：[Lindsay Bassett](https://github.com/lindsaybassett)｜翻譯：楊尊一 <p>
+讀書會紀錄：[多奇數位創意有限公司](http://www.miniasp.com) ，有任何建議歡迎提出，感謝!</p>
 
 <!-- {blockquote: style='display:none'} -->
 
