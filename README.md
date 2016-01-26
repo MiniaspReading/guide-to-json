@@ -1,4 +1,4 @@
-##### 從 Github 上看到的嗎? 我們有提供更好的瀏覽體驗!. **[ JavaScript Object Notation 精要 讀書會紀錄 →](http://jeffwu85182.github.io/rscss/)**
+##### 從 Github 上看到的嗎? 我們有更好的瀏覽體驗! **[ JavaScript Object Notation 精要 讀書會紀錄 →](http://miniaspreading.github.io/guide-to-json/)**
 <!-- {h5: style='display:none'} -->
 
 ----
@@ -87,7 +87,7 @@ iii. 學習 JSON
 
 ----
 作者：[Lindsay Bassett](https://github.com/lindsaybassett)，翻譯：楊尊一 <p>
-讀書會紀錄：[多奇數位創意有限公司](http://www.miniasp.com) ，有任何建議歡迎提出，感謝!</p>
+讀書會紀錄：[多奇數位](http://www.miniasp.com) ，有任何建議歡迎提出，感謝!</p>
 
 <!-- {blockquote: style='display:none'} -->
 
