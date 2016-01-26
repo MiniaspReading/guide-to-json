@@ -1,4 +1,4 @@
-#第八章 JSON 與 NoSQL
+# 第八章 JSON 與 NoSQL
 
 一般 Web 應用程式通常都是使用關聯性資料庫做為資料儲存體，就可以很容易的透過 SQL 語法做新增、修改、刪除與查詢對資料進行操作，
 甚至可以結合兩個表格的查詢。
@@ -9,8 +9,8 @@ ON Account.accoundId = Address.accountId;
 ```
 透過SQL JOIN 語句，就可以取得 Account 與 Address 這兩個資料表的關聯資料：firstName，lastName，street與zip。
 
-*NoSQL*不是關聯式資料庫，無法使用 SQL 語句查詢資料已取得關聯表格。*NoSQL*是一個*【鍵-值儲存體】*有些是XML文件或JSON文件，
-我們討論一種使用JSON文件來儲存資料的文件儲存體資料庫*CouchDB*。
+* NoSQL 不是關聯式資料庫，無法使用 SQL 語句查詢資料已取得關聯表格。* NoSQL是一個【鍵-值儲存體】*有些是XML文件或JSON文件，
+我們討論一種使用JSON文件來儲存資料的文件儲存體資料庫 * CouchDB。
 ## CouchDB 資料庫 ##
 
 [CouchDB](http://couchdb.apache.org/) 是一總NoSQL資料庫，已非關聯式方式儲存JSON文件資料。
@@ -27,19 +27,19 @@ ON Account.accoundId = Address.accountId;
   "lastName" : "Barker",
   "age" : 91,
   "address" : [
-				{
-				"street" : "123 fake st",
-				"city" : "Somewhere",
-				"state" : "OR",
-				"zip" : "97520"
-				},
-				{
-				"street" : "456 fake st",
-				"city" : "Some Place",
-				"state" : "CA",
-				"zip" : "9600"
-				}
-  			  ]
+	{
+	"street" : "123 fake st",
+	"city" : "Somewhere",
+	"state" : "OR",
+	"zip" : "97520"
+	},
+	{
+	"street" : "456 fake st",
+	"city" : "Some Place",
+	"state" : "CA",
+	"zip" : "9600"
+	}
+	]
 }
 ```
 當我們像CouchDB資料庫查詢帳戶資料時，會取得一份結構化的文件，無須重組關聯性，這種方式既方便又快。
@@ -116,7 +116,7 @@ CouchDB另一個擅長的事情就是處裡演進資料。 *我覺得用【處�
     "galaxy" : "Milky Way"				
 }
 ```
-*PS：看了這些介紹好像感覺不出來有多強大阿。*
+* PS：看了這些介紹好像感覺不出來有多強大阿。
 
 問題是使用CouchDB到底要如何寫入資料與讀取資料呢?到底是有多強呢?讓我們繼續看下去.....。
 
