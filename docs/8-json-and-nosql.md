@@ -10,7 +10,7 @@ ON Account.accoundId = Address.accountId;
 透過SQL JOIN 語句，就可以取得 Account 與 Address 這兩個資料表的關聯資料：firstName，lastName，street與zip。
 
 <b> NoSQL 不是關聯式資料庫，無法使用 SQL 語句查詢資料已取得關聯表格。</b> NoSQL是一個【鍵-值儲存體】有些是XML文件或JSON文件，
-我們討論一種使用JSON文件來儲存資料的文件儲存體資料庫 <b>[CouchDB](http://couchdb.apache.org/) <b>。
+我們討論一種使用JSON文件來儲存資料的文件儲存體資料庫 <b>[CouchDB](http://couchdb.apache.org/) </b>。
 ## CouchDB 資料庫 ##
 
 [CouchDB](http://couchdb.apache.org/) 是一種 NoSQL 資料庫，以非關聯式方式儲存 JSON 文件資料。
@@ -48,7 +48,7 @@ CouchDB 網站位置：<a href="http://couchdb.apache.org/" target="_blank">http
 與郵遞區號產生關聯，單一結構文件就會很難表達複雜的關係。
 
 [CouchDB](http://couchdb.apache.org/)  另一個擅長的事情就是處裡演進資料。<i>我覺得用【處裡演進資料】來敘述有點抽象，我把它稱為
-【加欄位】這樣比較有感覺，每當客戶要改資料欄位時，就真的很想....幫他改XDD。<i> 當我的資料表越複雜時，
+【加欄位】這樣比較有感覺，每當客戶要改資料欄位時，就真的很想....幫他改XDD。</i> 當我的資料表越複雜時，
 也許就會再開一個資料表來協助儲存關聯資訊。
 
 使用 [CouchDB](http://couchdb.apache.org/)  時，當資料<b>演進</b>時可以不需要修改結構描述，可以在JSON中以物件陣列代表電話號碼，這樣每個帳號
