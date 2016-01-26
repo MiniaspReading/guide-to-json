@@ -73,7 +73,7 @@ iii. 學習 JSON
 
 
 讓我們開始吧!
-[Continue 繼續 →](docs/1-what-is-json.md)<br>
+[進入第一章 →](docs/1-what-is-json.md)<br>
 
 
 <!-- {p:.pull-box} -->
@@ -86,8 +86,8 @@ iii. 學習 JSON
 <!-- {p: style='display:none'} -->
 
 ----
-作者：[Lindsay Bassett](https://github.com/lindsaybassett)，翻譯：楊尊一 <p>
-讀書會紀錄：[多奇數位](http://www.miniasp.com) ，有任何建議歡迎提出，感謝!</p>
+作者：[Lindsay Bassett](https://github.com/lindsaybassett)，翻譯：楊尊一。<br>
+網頁樣板：[docpress](https://github.com/docpress/docpress) ，讀書會紀錄：[多奇數位](http://www.miniasp.com) <br>有任何建議歡迎提出，感謝!
 
 <!-- {blockquote: style='display:none'} -->
 
