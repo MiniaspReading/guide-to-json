@@ -17,15 +17,17 @@
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><p>#&#x7B2C;&#x516B;&#x7AE0; JSON &#x8207; NoSQL</p>
+        <div class="markdown-body"><h1 id="json-nosql">&#x7B2C;&#x516B;&#x7AE0; JSON &#x8207; NoSQL</h1>
 <p>&#x4E00;&#x822C; Web &#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x95DC;&#x806F;&#x6027;&#x8CC7;&#x6599;&#x5EAB;&#x505A;&#x70BA;&#x8CC7;&#x6599;&#x5132;&#x5B58;&#x9AD4;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x900F;&#x904E; SQL &#x8A9E;&#x6CD5;&#x505A;&#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x522A;&#x9664;&#x8207;&#x67E5;&#x8A62;&#x5C0D;&#x8CC7;&#x6599;&#x9032;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;
 &#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x7D50;&#x5408;&#x5169;&#x500B;&#x8868;&#x683C;&#x7684;&#x67E5;&#x8A62;&#x3002;</p>
 <pre><code class="lang-sh">SELECT Account.firstName,Account.lastName,Address.street,Address.zip From Account JOIN Address
 ON Account.accoundId = Address.accountId;
 </code></pre>
 <p>&#x900F;&#x904E;SQL JOIN &#x8A9E;&#x53E5;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x53D6;&#x5F97; Account &#x8207; Address &#x9019;&#x5169;&#x500B;&#x8CC7;&#x6599;&#x8868;&#x7684;&#x95DC;&#x806F;&#x8CC7;&#x6599;&#xFF1A;firstName&#xFF0C;lastName&#xFF0C;street&#x8207;zip&#x3002;</p>
-<p><em>NoSQL</em>&#x4E0D;&#x662F;&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x7121;&#x6CD5;&#x4F7F;&#x7528; SQL &#x8A9E;&#x53E5;&#x67E5;&#x8A62;&#x8CC7;&#x6599;&#x5DF2;&#x53D6;&#x5F97;&#x95DC;&#x806F;&#x8868;&#x683C;&#x3002;<em>NoSQL</em>&#x662F;&#x4E00;&#x500B;*&#x3010;&#x9375;-&#x503C;&#x5132;&#x5B58;&#x9AD4;&#x3011;<em>&#x6709;&#x4E9B;&#x662F;XML&#x6587;&#x4EF6;&#x6216;JSON&#x6587;&#x4EF6;&#xFF0C;
-&#x6211;&#x5011;&#x8A0E;&#x8AD6;&#x4E00;&#x7A2E;&#x4F7F;&#x7528;JSON&#x6587;&#x4EF6;&#x4F86;&#x5132;&#x5B58;&#x8CC7;&#x6599;&#x7684;&#x6587;&#x4EF6;&#x5132;&#x5B58;&#x9AD4;&#x8CC7;&#x6599;&#x5EAB;</em>CouchDB*&#x3002;</p>
+<ul>
+<li>NoSQL &#x4E0D;&#x662F;&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x7121;&#x6CD5;&#x4F7F;&#x7528; SQL &#x8A9E;&#x53E5;&#x67E5;&#x8A62;&#x8CC7;&#x6599;&#x5DF2;&#x53D6;&#x5F97;&#x95DC;&#x806F;&#x8868;&#x683C;&#x3002;* NoSQL&#x662F;&#x4E00;&#x500B;&#x3010;&#x9375;-&#x503C;&#x5132;&#x5B58;&#x9AD4;&#x3011;*&#x6709;&#x4E9B;&#x662F;XML&#x6587;&#x4EF6;&#x6216;JSON&#x6587;&#x4EF6;&#xFF0C;
+&#x6211;&#x5011;&#x8A0E;&#x8AD6;&#x4E00;&#x7A2E;&#x4F7F;&#x7528;JSON&#x6587;&#x4EF6;&#x4F86;&#x5132;&#x5B58;&#x8CC7;&#x6599;&#x7684;&#x6587;&#x4EF6;&#x5132;&#x5B58;&#x9AD4;&#x8CC7;&#x6599;&#x5EAB; * CouchDB&#x3002;</li>
+</ul>
 <h2 id="couchdb">CouchDB &#x8CC7;&#x6599;&#x5EAB;</h2>
 <p><a href="http://couchdb.apache.org/">CouchDB</a> &#x662F;&#x4E00;&#x7E3D;NoSQL&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x5DF2;&#x975E;&#x95DC;&#x806F;&#x5F0F;&#x65B9;&#x5F0F;&#x5132;&#x5B58;JSON&#x6587;&#x4EF6;&#x8CC7;&#x6599;&#x3002;</p>
 <pre><code class="lang-sh">&#x5DF2;&#x3010;NoSQL&#x3011;&#x51A0;&#x540D;&#x7684;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x5C31;&#x662F;&#x544A;&#x8A34;&#x6211;&#x5011;&#x4ED6;&#x4E0D;&#x662F;&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x6211;&#x5011;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;SQL&#x8A9E;&#x53E5;&#x4F86;&#x67E5;&#x8A62;&#x8CC7;&#x6599;&#x3002;
@@ -38,19 +40,19 @@ ON Account.accoundId = Address.accountId;
   <span class="pl-s">&quot;lastName&quot;</span> : <span class="pl-s">&quot;Barker&quot;</span>,
   <span class="pl-s">&quot;age&quot;</span> : <span class="hljs-number">91</span>,
   <span class="pl-s">&quot;address&quot;</span> : [
-				{
-				<span class="pl-s">&quot;street&quot;</span> : <span class="pl-s">&quot;123 fake st&quot;</span>,
-				<span class="pl-s">&quot;city&quot;</span> : <span class="pl-s">&quot;Somewhere&quot;</span>,
-				<span class="pl-s">&quot;state&quot;</span> : <span class="pl-s">&quot;OR&quot;</span>,
-				<span class="pl-s">&quot;zip&quot;</span> : <span class="pl-s">&quot;97520&quot;</span>
-				},
-				{
-				<span class="pl-s">&quot;street&quot;</span> : <span class="pl-s">&quot;456 fake st&quot;</span>,
-				<span class="pl-s">&quot;city&quot;</span> : <span class="pl-s">&quot;Some Place&quot;</span>,
-				<span class="pl-s">&quot;state&quot;</span> : <span class="pl-s">&quot;CA&quot;</span>,
-				<span class="pl-s">&quot;zip&quot;</span> : <span class="pl-s">&quot;9600&quot;</span>
-				}
-  			  ]
+	{
+	<span class="pl-s">&quot;street&quot;</span> : <span class="pl-s">&quot;123 fake st&quot;</span>,
+	<span class="pl-s">&quot;city&quot;</span> : <span class="pl-s">&quot;Somewhere&quot;</span>,
+	<span class="pl-s">&quot;state&quot;</span> : <span class="pl-s">&quot;OR&quot;</span>,
+	<span class="pl-s">&quot;zip&quot;</span> : <span class="pl-s">&quot;97520&quot;</span>
+	},
+	{
+	<span class="pl-s">&quot;street&quot;</span> : <span class="pl-s">&quot;456 fake st&quot;</span>,
+	<span class="pl-s">&quot;city&quot;</span> : <span class="pl-s">&quot;Some Place&quot;</span>,
+	<span class="pl-s">&quot;state&quot;</span> : <span class="pl-s">&quot;CA&quot;</span>,
+	<span class="pl-s">&quot;zip&quot;</span> : <span class="pl-s">&quot;9600&quot;</span>
+	}
+	]
 }
 </code></pre>
 <p>&#x7576;&#x6211;&#x5011;&#x50CF;CouchDB&#x8CC7;&#x6599;&#x5EAB;&#x67E5;&#x8A62;&#x5E33;&#x6236;&#x8CC7;&#x6599;&#x6642;&#xFF0C;&#x6703;&#x53D6;&#x5F97;&#x4E00;&#x4EFD;&#x7D50;&#x69CB;&#x5316;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7121;&#x9808;&#x91CD;&#x7D44;&#x95DC;&#x806F;&#x6027;&#xFF0C;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#x65E2;&#x65B9;&#x4FBF;&#x53C8;&#x5FEB;&#x3002;
@@ -122,7 +124,9 @@ ON Account.accoundId = Address.accountId;
     <span class="pl-s">&quot;galaxy&quot;</span> : <span class="pl-s">&quot;Milky Way&quot;</span>				
 }
 </code></pre>
-<p><em>PS&#xFF1A;&#x770B;&#x4E86;&#x9019;&#x4E9B;&#x4ECB;&#x7D39;&#x597D;&#x50CF;&#x611F;&#x89BA;&#x4E0D;&#x51FA;&#x4F86;&#x6709;&#x591A;&#x5F37;&#x5927;&#x963F;&#x3002;</em></p>
+<ul>
+<li>PS&#xFF1A;&#x770B;&#x4E86;&#x9019;&#x4E9B;&#x4ECB;&#x7D39;&#x597D;&#x50CF;&#x611F;&#x89BA;&#x4E0D;&#x51FA;&#x4F86;&#x6709;&#x591A;&#x5F37;&#x5927;&#x963F;&#x3002;</li>
+</ul>
 <p>&#x554F;&#x984C;&#x662F;&#x4F7F;&#x7528;CouchDB&#x5230;&#x5E95;&#x8981;&#x5982;&#x4F55;&#x5BEB;&#x5165;&#x8CC7;&#x6599;&#x8207;&#x8B80;&#x53D6;&#x8CC7;&#x6599;&#x5462;?&#x5230;&#x5E95;&#x662F;&#x6709;&#x591A;&#x5F37;&#x5462;?&#x8B93;&#x6211;&#x5011;&#x7E7C;&#x7E8C;&#x770B;&#x4E0B;&#x53BB;.....&#x3002;</p>
 
         </div>
