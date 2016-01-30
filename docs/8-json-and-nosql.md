@@ -260,3 +260,51 @@ http://127.0.0.1:5984/_users/_design/_aut
     "validate_doc_update": "*etc...*"
 }
 ```
+* 建立一個新資料庫，修改Http 為 `PUT` 動詞，建立一個`account`資料表。
+```
+PUT http://127.0.0.1:5984/accounts 
+```
+```sh
+{"ok":true}
+```
+代表建立成功。透過前面的查詢資料庫API，得知目前我們有3個資料表。
+```sh
+[
+    "_replicator",
+    "_users",
+    "accounts"
+]
+```
+* 建立一個新資料，修改Http 為 `POST` 動詞。*請確認 Content-type:application/json*
+```
+POST http://127.0.0.1:5984/accounts 
+```
+傳送文件內容如下。
+```sh
+{
+  "name" : "Shon",
+  "age" : 20,
+  "address" : { 
+      "street" :"450 Fakey Fake st",
+      "city" : "somewhere",
+      "state" : "CA",
+      "zip" : "123"
+      },
+   "gender" : "male"
+}
+```
+回應如下，就代表建立成功。
+```sh
+{
+    "ok":true,
+    "id":"0e2271540bd5a17dd4fd4fc3e800125c",
+    "rev":"1-06eb6f58155be163f2588a34d3ff5832"
+}
+
+```
+透過前述的查詢即可得知該筆資料的內容。最後還有一招大絕，請點選網址，一切儘再不言中...
+[http://127.0.0.1:5984/_utils/]http://127.0.0.1:5984/_utils/
+
+####　相關連結 
+[CouchDB API](http://docs.couchdb.org/en/1.6.1/intro/api.html#)
+
