@@ -165,7 +165,7 @@ sudo apt-get install -V couchdb
 ```sudo stop couchdb  ```  
  >couchdb stop/waiting
    
-#### 若有需求可修改 /etc/couchdb/local.ini 設定檔的 'bind_address=0.0.0.0' 修改連線IP  
+` 若有需求可修改 /etc/couchdb/local.ini 設定檔的 'bind_address=0.0.0.0' 修改連線IP。`  
 
 * 啟動 CouchDB 指令
 
@@ -189,4 +189,74 @@ sudo apt-get install -V couchdb
 ```
 
 ####　相關連結 
+[Ubuntu 安裝方式](https://launchpad.net/~couchdb/+archive/ubuntu/stable)
 [其他安裝方式](http://docs.couchdb.org/en/1.6.1/install/index.html)
+
+## CouchDB 的 API ##
+使用 CouchDB 時，向資料庫查詢資料方式是透過Http請求資源。   
+* 查詢目前我們的資料庫有哪些預設的資料庫。
+```
+http://127.0.0.1:5984/_all_dbs   
+```
+```sh 
+[
+    "_replicator",
+    "_users"
+]
+```
+顯示目前我們只有兩個預設的資料庫，`_replicator` 和 `_users`。
+
+* 查詢`_users`資料庫資訊。
+```
+http://127.0.0.1:5984/_users   
+```
+```sh
+{
+    "db_name": "_users",
+    "doc_count": 1,
+    "doc_del_count": 0,
+    "update_seq": 1,
+    "purge_seq": 0,
+    "compact_running": false,
+    "disk_size": 4194,
+    "data_size": 2141,
+    "instance_start_time": "1454122440071841",
+    "disk_format_version": 6,
+    "committed_update_seq": 1
+}
+```
+注意`doc_count`這個名稱-值對，他代表資料庫文件數，目前是1。
+
+* 查詢`_users`資料庫中所有文件識別陣列。
+```
+http://127.0.0.1:5984/_users/_all_docs   
+```
+```sh
+{
+    "total_rows": 1,
+    "offset": 0,
+    "rows": [
+        {
+            "id": "_design/_auth",
+            "key": "_design/_auth",
+            "value": {
+                "rev": "1-75efcce1f083316d622d389f3f9813f7"
+            }
+        }
+    ]
+}
+```
+目前只有顯示有一個文件識別陣列。
+
+* 透過查詢`_users`資料庫中所有文件識別陣列請求文件。
+```
+http://127.0.0.1:5984/_users/_design/_aut   
+```
+```sh
+{
+    "_id": "_design/_auth",
+    "_rev": "1-75efcce1f083316d622d389f3f9813f7",
+    "language": "javascript",
+    "validate_doc_update": "*etc...*"
+}
+```
