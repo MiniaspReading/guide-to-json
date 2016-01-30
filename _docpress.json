@@ -201,6 +201,16 @@
             "title": "CouchDB 資料庫",
             "depth": 2,
             "id": "couchdb"
+          },
+          {
+            "title": "CouchDB 資料庫",
+            "depth": 2,
+            "id": "couchdb"
+          },
+          {
+            "title": "安裝CouchDB",
+            "depth": 2,
+            "id": "couchdb"
           }
         ]
       },
