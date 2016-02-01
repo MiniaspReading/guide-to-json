@@ -10,5 +10,5 @@
 - **[第六章：JavaScript 的 XML HttpRequest 與 API](helpers.md)**
 - **[第七章：JSON 與用戶端架構](helpers.md)**
 - **[第八章：JSON 與 NoSQL](8-json-and-nosql.md)**
-- **[第九章：伺服器端的 JSON](8-json-and-nosql.md)**
+- **[第九章：伺服器端的 JSON](9-JSON_On_Server.md)**
 - **[第十章：結論](summary.md)**
