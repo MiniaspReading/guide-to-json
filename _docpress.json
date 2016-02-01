@@ -198,14 +198,19 @@
         "slug": "8-json-and-nosql",
         "headings": [
           {
-            "title": "CouchDB 資料庫",
+            "title": "8-1 CouchDB 資料庫",
             "depth": 2,
-            "id": "couchdb"
+            "id": "8-1-couchdb"
           },
           {
-            "title": "安裝CouchDB",
+            "title": "8-2 安裝CouchDB",
             "depth": 2,
-            "id": "couchdb"
+            "id": "8-2-couchdb"
+          },
+          {
+            "title": "8-3 CouchDB API",
+            "depth": 2,
+            "id": "8-3-couchdb-api"
           }
         ]
       },
