@@ -16,5 +16,5 @@ Components will be named with **at least two words**, separated by a dash. Examp
 
 How do you write a component exactly? Let's learn about Elements. <br>
 如何更精確的撰寫元件？繼續了解關於元素的部分
-[Continue 繼續 →](elements.md)
+[Continue 繼續 →](2-json-syntax.md)
 <!-- {p:.pull-box} -->
