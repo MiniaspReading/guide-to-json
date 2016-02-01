@@ -216,10 +216,39 @@
       },
       {
         "title": "第九章：伺服器端的 JSON",
-        "source": "docs/8-json-and-nosql.md",
+        "source": "docs/9-JSON_On_Server.md",
         "expand": true,
-        "url": "8-json-and-nosql.html",
-        "slug": "8-json-and-nosql-2"
+        "url": "9-JSON_On_Server.html",
+        "slug": "9-json_on_server",
+        "headings": [
+          {
+            "title": "9-1 序列化、反序列化與請求JSON",
+            "depth": 2,
+            "id": "9-1-json",
+            "headings": [
+              {
+                "title": "9-1-1 ASP .NET",
+                "depth": 3,
+                "id": "9-1-1-asp-.net"
+              },
+              {
+                "title": "9-1-2 JSON 序列化",
+                "depth": 3,
+                "id": "9-1-2-json"
+              },
+              {
+                "title": "9-1-3 JSON 反序列化",
+                "depth": 3,
+                "id": "9-1-3-json"
+              },
+              {
+                "title": "9-1-4 請求 JSON",
+                "depth": 3,
+                "id": "9-1-4-json"
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "第十章：結論",
@@ -387,8 +416,59 @@
     },
     "8-json-and-nosql.html": {
       "source": "docs/8-json-and-nosql.md",
+      "title": "第八章：JSON 與 NoSQL",
+      "slug": "8-json-and-nosql",
+      "headings": [
+        {
+          "title": "8-1 CouchDB 資料庫",
+          "depth": 2,
+          "id": "8-1-couchdb"
+        },
+        {
+          "title": "8-2 安裝CouchDB",
+          "depth": 2,
+          "id": "8-2-couchdb"
+        },
+        {
+          "title": "8-3 CouchDB API",
+          "depth": 2,
+          "id": "8-3-couchdb-api"
+        }
+      ]
+    },
+    "9-JSON_On_Server.html": {
+      "source": "docs/9-JSON_On_Server.md",
       "title": "第九章：伺服器端的 JSON",
-      "slug": "8-json-and-nosql-2"
+      "slug": "9-json_on_server",
+      "headings": [
+        {
+          "title": "9-1 序列化、反序列化與請求JSON",
+          "depth": 2,
+          "id": "9-1-json",
+          "headings": [
+            {
+              "title": "9-1-1 ASP .NET",
+              "depth": 3,
+              "id": "9-1-1-asp-.net"
+            },
+            {
+              "title": "9-1-2 JSON 序列化",
+              "depth": 3,
+              "id": "9-1-2-json"
+            },
+            {
+              "title": "9-1-3 JSON 反序列化",
+              "depth": 3,
+              "id": "9-1-3-json"
+            },
+            {
+              "title": "9-1-4 請求 JSON",
+              "depth": 3,
+              "id": "9-1-4-json"
+            }
+          ]
+        }
+      ]
     },
     "summary.html": {
       "source": "docs/summary.md",
@@ -406,6 +486,7 @@
     "docs/layouts.md": "layouts.html",
     "docs/helpers.md": "helpers.html",
     "docs/8-json-and-nosql.md": "8-json-and-nosql.html",
+    "docs/9-JSON_On_Server.md": "9-JSON_On_Server.html",
     "docs/summary.md": "summary.html",
     "docs/docpress.json": "docpress.json",
     "docs/images/component-elements.png": "images/component-elements.png",
