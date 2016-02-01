@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>第二章：JSON 語法</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-2-json-syntax">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="json">&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A; JSON &#x8A9E;&#x6CD5;</h1>
+<h2 id="2-1-json-javascript">2-1 JSON &#x4EE5; JavaScript &#x7684;&#x7269;&#x4EF6;&#x5BE6;&#x5B57;&#x70BA;&#x57FA;&#x790E;&#x3002;</h2>
+<blockquote>
+<p>&#x5BE6;&#x5B57; ( literal ) &#xFF1A;&#x662F;&#x5BE6;&#x969B;&#x4EE5;&#x8CC7;&#x6599;&#x8868;&#x793A;&#x7684;&#x503C;&#xFF0C;&#x5B83;&#x4EE5;&#x6E96;&#x5099;&#x88AB;&#x89E3;&#x91CB;&#x7684;&#x65B9;&#x5F0F;&#x7CBE;&#x78BA;&#x5BEB;&#x51FA;&#x3002;</p>
+</blockquote>
+<p>&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x7684;&#x91CD;&#x9EDE;&#x662F;&#x8CC7;&#x6599;&#xFF0C;&#x56E0;&#x6B64; <strong>JSON &#x4E26;&#x672A;&#x5305;&#x542B; JavaScript &#x7684;&#x7269;&#x4EF6;&#x5BE6;&#x5B57;&#x7684;&#x51FD;&#x5F0F;</strong>&#x3002;JSON &#x5F15;&#x7528; JavaScript &#x7269;&#x4EF6;&#x5BE6;&#x5B57;&#x7684;&#x65B9;&#x5F0F;&#x7D14;&#x7CB9;&#x53EA;&#x4EE5;&#x8A9E;&#x610F;&#x8868;&#x793A;&#x7269;&#x4EF6;&#x5BE6;&#x5B57;&#x8207;&#x5176;&#x5C6C;&#x6027;&#xFF0C;&#x5C6C;&#x6027;&#x7684;&#x8868;&#x793A;&#x4EE5; <strong>&#x540D;&#x7A31;&#xFF1A;&#x503C;&#x5C0D;</strong>&#x5C55;&#x73FE;&#x3002;</p>
+<p>&#x7BC4;&#x4F8B;&#xFF1A;&#x4EE5; JSON &#x63CF;&#x8FF0;&#x6211;&#x73FE;&#x5728;&#x6240;&#x7A7F;&#x7684;&#x978B;&#x5B50;</p>
+<pre><code class="lang-JSON">{
+    &quot;<span class="pl-e">brand</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Crocs&quot;</span></span>,
+    &quot;<span class="pl-e">color</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Pink&quot;</span></span>,
+    &quot;<span class="pl-e">size</span>&quot;: <span class="pl-s"><span class="hljs-number">9</span></span>,
+    &quot;<span class="pl-e">hasLaces</span>&quot;: <span class="pl-s"><span class="pl-c1">false</span>
+</span>}
+</code></pre>
+<h2 id="2-2-">2-2 &#x540D;&#x7A31; - &#x503C;&#x5C0D;</h2>
+<p>&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x7684;&#x6982;&#x5FF5;&#x5EE3;&#x6CDB;&#x7528;&#x65BC;&#x96FB;&#x8166;&#xFF0C;&#x6709;&#x6642;&#x7A31;&#x70BA;&#x9375; - &#x503C;&#x5C0D;&#x3001;&#x5C6C;&#x6027; - &#x503C;&#x5C0D;&#x6216;&#x6B04;&#x4F4D; - &#x503C;&#x5C0D;&#xFF0C;&#x672C;&#x66F8;&#x4E00;&#x6982;&#x7A31;&#x70BA;&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x3002;</p>
+<blockquote>
+<p>&#x5C31;&#x662F;&#x6211;&#x5011;&#x5E38;&#x8B1B;&#x7684; <strong>Key : value</strong>&#x3002;</p>
+</blockquote>
+<p>&#x5728; JSON &#x7684;&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x4E2D;&#xFF0C;&#x503C;&#x53EF;&#x4EE5;&#x662F;<code>number</code>&#x3001;<code>boolean</code>&#x3001;<code>null</code>&#x3001;<code>array</code> &#x6216; <code>object</code>&#x3002;<br>
+<strong>JSON &#x4F7F;&#x7528;&#x5192;&#x865F;&#xFF08;<code>&#xFF1A;</code>&#xFF09;&#x4F86;&#x5206;&#x9694;&#x540D;&#x7A31;&#x8207;&#x503C;&#xFF0C;&#x540D;&#x7A31;&#x6C38;&#x9060;&#x5728;&#x5DE6;&#x5074;&#x800C;&#x503C;&#x6C38;&#x9060;&#x5728;&#x53F3;&#x5074;&#x3002;</strong></p>
+<h2 id="2-3-json">2-3 JSON &#x7684;&#x6B63;&#x78BA;&#x8A9E;&#x6CD5;</h2>
+<p>JSON &#x6240;&#x4F7F;&#x7528;&#x7684;&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x5728;&#x5F88;&#x591A;&#x7CFB;&#x7D71;&#x4E2D;&#x662F;&#x5F88;&#x597D;&#x7528;&#x5230;&#x8CC7;&#x6599;&#x7D50;&#x69CB;&#x3002;&#x5728;&#x540D;&#x7A31;&#x4E2D;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x6216;&#x7279;&#x6B8A;&#x5B57;&#x5143;&#xFF08;<code>a-z</code>&#x3001;<code>0-9</code>&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x5143;&#xFF09;&#x6216;&#x8A31;&#x6C92;&#x6709;&#x8003;&#x616E;&#x5230;<strong>&#x53EF;&#x651C;&#x6027;</strong>&#xFF0C;&#x56E0;&#x6B64;&#x907F;&#x514D;&#x7A7A;&#x683C;&#x6216;&#x7279;&#x6B8A;&#x5B57;&#x5143;&#x5C0D;&#x53EF;&#x651C;&#x6027;&#x5F88;&#x91CD;&#x8981;&#x3002;</p>
+<blockquote>
+<p>&#x53EF;&#x651C;&#x6027;&#xFF1A;&#x6211;&#x5011;&#x5728;&#x7B2C;&#x4E00;&#x7AE0;&#x5C07;&#x6B64;&#x8A5E;&#x5F59;&#x5B9A;&#x7FA9;&#x70BA; &#x201C;&#x4EE5;&#x7CFB;&#x7D71;&#x96D9;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x5169;&#x8005;&#x9593;&#x8F49;&#x79FB;&#x8CC7;&#x8A0A;&#x201D;&#x3002;</p>
+</blockquote>
+<p>JSON &#x7684;&#x540D;&#x7A31; - &#x5B57;&#x5143;&#x5C0D;&#x4E2D;&#xFF0C;&#x540D;&#x7A31;&#x82E5;&#x88AB;&#x7CFB;&#x7D71;&#x7576;&#x4F5C;&#x7269;&#x4EF6;&#x4ED4;&#x5165;&#x8A18;&#x61B6;&#x9AD4;&#x5247;&#x6703;&#x6210;&#x70BA; &#x201D;&#x5C6C;&#x6027;&#x201C;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x7CFB;&#x7D71;&#x4E2D;&#xFF0C;&#x5C6C;&#x6027;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x5E95;&#x7DDA;&#x5B57;&#x5143;&#xFF08;_)&#x6216;&#x6578;&#x5B57;&#xFF0C;&#x4F46;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x6CC1;&#x4E0B;&#x6700;&#x597D;&#x4FDD;&#x6301;&#x4F7F;&#x7528; <code>A-Z</code>&#x3001;<code>a-z</code> &#x7B49;&#x5B57;&#x6BCD;&#x5B57;&#x5143;&#x3002;&#x56E0;&#x6B64;&#x82E5;&#x60F3;&#x8981;&#x5728;&#x540D;&#x7A31;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x500B;&#x5B57;&#x8A5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8A2D;&#x7F6E;&#x6210;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    &quot;lindsaysAnimal&quot;: &quot;cat&quot;,
+    &quot;myAnimal&quot;
+}
+</code></pre>
+<blockquote>
+<p>&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x4E2D;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x503C;&#x4E26;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x7528;&#x96D9;&#x5F15;&#x865F;&#xFF0C;&#x82E5;&#x503C;&#x662F;&#x5B57;&#x4E32;&#x8CC7;&#x6599;&#x578B;&#x5225;&#xFF0C;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x4F7F;&#x7528;&#x96D9;&#x5F15;&#x865F;&#x3002;JSON &#x5176;&#x9918;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x5225;&#x5247;&#x4E0D;&#x6703;&#x4EE5;&#x96D9;&#x5F15;&#x865F;&#x5305;&#x570D;&#x3002;</p>
+</blockquote>
+<p>JSON &#x7269;&#x4EF6;&#x524D;&#x5F8C;&#x90FD;&#x9700;&#x8981;&#x52A0;&#x4E0A;&#x5927;&#x62EC;&#x865F; <code>{</code> <code>}</code> &#x5982;&#x4E0A;&#x8868;&#x793A;&#x3002;</p>
+<blockquote>
+<p>&#x88FD;&#x4F5C; JSON &#x6642;&#xFF0C;&#x60F3;&#x50CF;&#x6388;&#x5C01;&#x9A0E;&#x58EB;&#x7684;&#x5178;&#x79AE;&#xFF0C;&#x570B;&#x738B;&#x7528;&#x528D;&#x9EDE;&#x5728;&#x65B0;&#x9A0E;&#x58EB;&#x7684;&#x5169;&#x80A9;&#x4E0A;&#x3002;&#x4F60;&#x662F;&#x570B;&#x738B;&#xFF0C;&#x800C;&#x4F60;&#x5FC5;&#x9808;&#x4EE5;&#x5927;&#x62EC;&#x865F;&#x9EDE;&#x5728; JSON &#x7269;&#x4EF6;&#x7684;&#x5169;&#x908A;&#x3002;<strong>&quot;&#x6715;&#x5C01;&#x4F60;&#x70BA; JSON <s>&#x9A0E;&#x58EB;</s> &#x7269;&#x4EF6;&quot;</strong></p>
+</blockquote>
+<p>&#x53E6;&#x4E00;&#x7A2E;&#x6AA2;&#x8996; JSON &#x8A9E;&#x6CD5;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x900F;&#x904E;&#x8B80;&#x53D6;&#x5B83;&#x7684;&#x6A5F;&#x5668;&#x7684;&#x89C0;&#x9EDE;&#x4F86;&#x770B;&#x3002;&#x8207;&#x4EBA;&#x985E;&#x4E0D;&#x540C;&#xFF0C;&#x6A5F;&#x5668;&#x662F;&#x975E;&#x5E38;&#x4F9D;&#x8CF4;&#x898F;&#x5247;&#x8207;&#x6307;&#x4EE4;&#x7684;&#x751F;&#x7269;(?)&#x3002;&#x7576;&#x4F60;&#x5728;&#x975E;&#x5B57;&#x4E32;&#x503C;(&#x6C92;&#x6709;&#x4F7F;&#x7528;&#x96D9;&#x5F15;&#x865F;&#x5305;&#x570D;)&#x4E2D;&#x4F7F;&#x7528;&#x4E0B;&#x5217;&#x4EFB;&#x4F55;&#x5B57;&#x5143;&#x6642;&#x5C31;&#x8868;&#x793A;&#x63D0;&#x4F9B;&#x8CC7;&#x6599;&#x5982;&#x4F55;&#x8B80;&#x53D6;&#x7684;&#x6307;&#x793A;&#xFF1A;</p>
+<ul>
+<li><strong>{</strong> &#xFF08;&#x5DE6;&#x5927;&#x62EC;&#x5F27;&#xFF09;&#x8868;&#x793A; <strong>&#x201C;&#x7269;&#x4EF6;&#x7684;&#x958B;&#x59CB;&#x201D;</strong></li>
+<li><strong>}</strong> &#xFF08;&#x53F3;&#x5927;&#x62EC;&#x5F27;&#xFF09;&#x8868;&#x793A; <strong>&#x201C;&#x7269;&#x4EF6;&#x7684;&#x7D50;&#x675F;&#x201D;</strong></li>
+<li><strong>[</strong> &#xFF08;&#x5DE6;&#x65B9;&#x62EC;&#x865F;&#xFF09;&#x8868;&#x793A; <strong>&#x201C;&#x9663;&#x5217;&#x7684;&#x958B;&#x59CB;&#x201D;</strong></li>
+<li><strong>]</strong> &#xFF08;&#x53F3;&#x65B9;&#x62EC;&#x865F;&#xFF09;&#x8868;&#x793A; <strong>&#x201C;&#x9663;&#x5217;&#x7684;&#x7D50;&#x675F;&#x201D;</strong></li>
+<li><strong>:</strong> &#xFF08;&#x5192;&#x865F;&#xFF09;&#x8868;&#x793A; <strong>&#x201C;&#x5206;&#x9694;&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x4E2D;&#x7684;&#x540D;&#x7A31;&#x8207;&#x503C;&#x201D;</strong></li>
+<li><strong>,</strong> &#xFF08;&#x9017;&#x865F;&#xFF09;&#x8868;&#x793A; <strong>&#x201C;&#x5206;&#x9694;&#x7269;&#x4EF6;&#x4E2D;&#x7684;&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x201D;</strong> &#x6216; <strong>&#x201C;&#x5206;&#x9694;&#x9663;&#x5217;&#x4E2D;&#x7684;&#x503C;&#x201D;</strong> ; &#x4E5F;&#x53EF;&#x4EE5;&#x8B80;&#x4F5C; <strong>&#x201C;&#x4E0B;&#x9762;&#x9084;&#x6709;&#x201D;</strong></li>
+</ul>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4F60;&#x5FD8;&#x8A18;&#x4EE5;&#x53F3;&#x62EC;&#x865F;&#x8868;&#x793A;&#x201C;&#x7269;&#x4EF6;&#x7684;&#x7D50;&#x675F;&#x201D;&#xFF0C;&#x5247;&#x7269;&#x4EF6;&#x4E0D;&#x6703;&#x88AB;&#x8FA8;&#x8B58;&#x6210;&#x7269;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x540D;&#x7A31; - &#x503C;&#x5C0D;&#x6E05;&#x55AE;&#x6700;&#x5F8C;&#x52A0;&#x4E0A;&#x9017;&#x865F;&#xFF0C;&#x5247;&#x8868;&#x793A;&#x201C;&#x4E0B;&#x9762;&#x9084;&#x6709;&#x201D;&#xFF0C;&#x4F46;&#x5176;&#x5BE6;&#x6C92;&#x6709;&#xFF0C;&#x9019;&#x662F;&#x5FC5;&#x9808;&#x8981;&#x66F4;&#x6B63;&#x7684;&#x8A9E;&#x6CD5;&#x3002;</p>
+</blockquote>
+<h2 id="2-4">2-4 &#x8A9E;&#x6CD5;&#x6AA2;&#x9A57;</h2>
+<p>&#x904B;&#x7528; JSON &#x6642;&#xFF0C;<strong>&#x6AA2;&#x9A57;</strong>&#x5F88;&#x91CD;&#x8981;&#x3002;<br>
+&#x6709;&#x8A31;&#x591A;&#x7DDA;&#x4E0A;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x6AA2;&#x9A57; JSON &#xFF0C;&#x641C;&#x5C0B; &quot;<strong>JSON validation</strong>&quot; &#x6703;&#x6709;&#x5F88;&#x591A;&#x7D50;&#x679C;&#xFF0C;&#x4E0B;&#x9762;&#x5E7E;&#x9805;&#x503C;&#x5F97;&#x95DC;&#x6CE8;&#xFF1A;</p>
+<ul>
+<li><strong><a href="http://jsonformatter.curiousconcept.com/">JSON Formatter &amp; Validator</a></strong>
+<ul>
+<li>&#x6709;&#x9078;&#x9805;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x5DE5;&#x5177;&#xFF0C;&#x6F02;&#x4EAE;&#x7684; UI &#x53EF;&#x6A19;&#x793A;&#x51FA;&#x932F;&#x8AA4;&#x3002;&#x7D93;&#x904E;&#x8655;&#x7406;&#x7684; JSON &#x986F;&#x793A;&#x5728;&#x6A39;&#x72C0;&#x7D50;&#x69CB;&#x8996;&#x7A97;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x500B;&#x8996;&#x7A97;&#x53EF;&#x4EE5;&#x8B93;&#x4F60;&#x8907;&#x88FD;&#x8655;&#x7406;&#x904E;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x3002;</li>
+</ul>
+</li>
+<li><strong><a href="http://www.jsdoneditoronline.org">JSON Editor Online</a></strong>
+<ul>
+<li>&#x6574;&#x5408; JSON &#x6AA2;&#x9A57;&#x3001;&#x683C;&#x5F0F;&#x5316;&#x8207;&#x8996;&#x89BA;&#x5C55;&#x793A;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x932F;&#x8AA4;&#x6307;&#x793A;&#x5668;&#x986F;&#x793A;&#x65BC;&#x6709;&#x932F;&#x7684;&#x7A0B;&#x5F0F;&#x884C;&#x3002;&#x6AA2;&#x9A57;&#x6642;&#x6703;&#x63D0;&#x4F9B;&#x6709;&#x7528;&#x7684;&#x89E3;&#x91CB;&#x932F;&#x8AA4;&#x8CC7;&#x8A0A;&#x3002;&#x8996;&#x89BA;&#x5316;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x6A39;&#x72C0;&#x7D50;&#x69CB;&#x986F;&#x793A;&#x4F60;&#x7684; JSON&#x3002;</li>
+</ul>
+</li>
+<li><strong><a href="http://jsonlint.com/">JSONLint</a></strong>
+<ul>
+<li>&#x4E0D;&#x56C9;&#x5506;&#x7684; JSON &#x6AA2;&#x9A57;&#x5DE5;&#x5177;&#xFF0C;&#x8907;&#x88FD;&#x3001;&#x8CBC;&#x4E0A;&#x3001;&#x6309;&#x4E0B; &quot;validate&quot; &#x5C31;&#x53EF;&#x4EE5;&#x3002;&#x5B83;&#x4E5F;&#x6703;&#x8CBC;&#x5FC3;&#x7684;&#x5C07;&#x4F60;&#x7684; JSON &#x683C;&#x5F0F;&#x5316;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-5-json">2-5 JSON &#x6587;&#x4EF6;</h2>
+<p>JSON &#x4F5C;&#x70BA;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x683C;&#x5F0F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x70BA;&#x7368;&#x7ACB;&#x7684;&#x6587;&#x4EF6;&#x4E26;&#x5132;&#x5B58;&#x65BC;&#x6A94;&#x6848;&#x7CFB;&#x7D71;&#x3002;</p>
+<blockquote>
+<p>&#x526F;&#x6A94;&#x540D;&#x5C31;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x8A18;&#x5F97;&#x7684;&#xFF1A; <code>.json</code>&#x3002;</p>
+</blockquote>
+<h2 id="2-6-json-mediatype">2-6 JSON &#x7684; MediaType</h2>
+<p>&#x50B3;&#x905E;&#x8CC7;&#x6599;&#x7D66;&#x4ED6;&#x4EBA;&#x6642;&#x7D93;&#x5E38;&#x9700;&#x8981;&#x63D0;&#x524D;&#x544A;&#x8A34;&#x5C0D;&#x65B9;&#x5B83;&#x7684;&#x578B;&#x5225;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x807D;&#x904E;&#x7DB2;&#x8DEF;&#x4E0A;&#x7684;<strong>&#x5A92;&#x9AD4;&#x578B;&#x5225;</strong>&#x3001;<strong>&#x5167;&#x5BB9;&#x578B;&#x5225;</strong>&#x6216;&#x7A31;&#x70BA; <strong>MIME &#x578B;&#x5225;</strong>&#x3002;&#x6B64;&#x578B;&#x5225;&#x683C;&#x5F0F;&#x70BA; type/subtype&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x7A2E;&#x4F60;&#x53EF;&#x80FD;&#x898B;&#x904E;&#x7684;&#x662F; text/html&#x3002;</p>
+<blockquote>
+<p>JSON &#x7684; MIME &#x578B;&#x5225;&#x662F; <strong>application/json</strong>&#x3002;</p>
+</blockquote>
+<p><a href="http://www.iana.org/assignments/media-types/media-types.xhtml">Internet Assigned Numbers Authority ( IANA )</a> &#x6709;&#x5A92;&#x9AD4;&#x578B;&#x5225;&#x7684;&#x6E05;&#x55AE;&#x3002;</p>
+<p class="pull-box">&#x63A5;&#x8457;&#x4E0B;&#x4E00;&#x7AE0;&#x8981;&#x8A0E;&#x8AD6;&#x7684;&#x4E8B; JSON &#x7684;&#x8CC7;&#x6599;&#x578B;&#x5225;&#x3002;
+<a href="variants.html">Continue &#x7E7C;&#x7E8C; &#x2192;</a></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="1-what-is-json.html"><span class="title">第一章：JSON 是什麼?</span></a></div>
+          <div class="right"><a href="variants.html"><span class="label">Next: </span><span class="title">第三章：JSON 資料型別</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要讀書紀錄</a>
+            </li>
+            <li class="menu-item -level-1"><a href="1-what-is-json.html" class="link title  link-1-what-is-json">第一章：JSON 是什麼?</a>
+            </li>
+            <li class="menu-item -level-1"><a href="2-json-syntax.html" class="link title -active link-2-json-syntax">第二章：JSON 語法</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#2-1-json-javascript" class="link title link-2-1-json-javascript">2-1 JSON 以 JavaScript 的物件實字為基礎。</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#2-2-" class="link title link-2-2-">2-2 名稱 - 值對</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#2-3-json" class="link title link-2-3-json">2-3 JSON 的正確語法</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#2-4" class="link title link-2-4">2-4 語法檢驗</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#2-5-json" class="link title link-2-5-json">2-5 JSON 文件</a>
+            </li>
+            <li class="menu-item -level-1"><a href="#2-6-json-mediatype" class="link title link-2-6-json-mediatype">2-6 JSON 的 MediaType</a>
+            </li>
+            <li class="menu-item -level-1"><a href="variants.html" class="link title  link-variants">第三章：JSON 資料型別</a>
+            </li>
+            <li class="menu-item -level-1"><a href="nested-components.html" class="link title  link-nested-components">第四章：JSON 結構描述</a>
+            </li>
+            <li class="menu-item -level-1"><a href="layouts.html" class="link title  link-layouts">第五章：JSON 安全考量</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers">第六章：JavaScript 的 XML HttpRequest 與 API</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers-2">第七章：JSON 與用戶端架構</a>
+            </li>
+            <li class="menu-item -level-1"><a href="8-json-and-nosql.html" class="link title  link-8-json-and-nosql">第八章：JSON 與 NoSQL</a>
+            </li>
+            <li class="menu-item -level-1"><a href="9-JSON_On_Server.html" class="link title  link-9-json_on_server">第九章：伺服器端的 JSON</a>
+            </li>
+            <li class="menu-item -level-1"><a href="summary.html" class="link title  link-summary">第十章：結論</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

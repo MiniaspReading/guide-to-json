@@ -55,45 +55,40 @@
       },
       {
         "title": "第二章：JSON 語法",
-        "source": "docs/elements.md",
+        "source": "docs/2-json-syntax.md",
         "expand": true,
-        "url": "elements.html",
-        "slug": "elements",
+        "url": "2-json-syntax.html",
+        "slug": "2-json-syntax",
         "headings": [
           {
-            "title": "Naming elements 元素的命名",
+            "title": "2-1 JSON 以 JavaScript 的物件實字為基礎。",
             "depth": 2,
-            "id": "naming-elements-yuan"
+            "id": "2-1-json-javascript"
           },
           {
-            "title": "Element selectors 元素選擇器",
+            "title": "2-2 名稱 - 值對",
             "depth": 2,
-            "id": "element-selectors-yuan"
+            "id": "2-2-"
           },
           {
-            "title": "On multiple words 在多個單字上",
+            "title": "2-3 JSON 的正確語法",
             "depth": 2,
-            "id": "on-multiple-words"
+            "id": "2-3-json"
           },
           {
-            "title": "Avoid tag selectors 避開標籤 (tag) 選擇器",
+            "title": "2-4 語法檢驗",
             "depth": 2,
-            "id": "avoid-tag-selectors-(tag)"
-          }
-        ],
-        "sections": [
+            "id": "2-4"
+          },
           {
-            "title": "可以視情況增減檔案",
-            "source": "docs/components.md",
-            "url": "components.html",
-            "slug": "components",
-            "headings": [
-              {
-                "title": "Naming components 元件命名",
-                "depth": 2,
-                "id": "naming-components-yuan"
-              }
-            ]
+            "title": "2-5 JSON 文件",
+            "depth": 2,
+            "id": "2-5-json"
+          },
+          {
+            "title": "2-6 JSON 的 MediaType",
+            "depth": 2,
+            "id": "2-6-json-mediatype"
           }
         ]
       },
@@ -309,42 +304,40 @@
         }
       ]
     },
-    "elements.html": {
-      "source": "docs/elements.md",
+    "2-json-syntax.html": {
+      "source": "docs/2-json-syntax.md",
       "title": "第二章：JSON 語法",
-      "slug": "elements",
+      "slug": "2-json-syntax",
       "headings": [
         {
-          "title": "Naming elements 元素的命名",
+          "title": "2-1 JSON 以 JavaScript 的物件實字為基礎。",
           "depth": 2,
-          "id": "naming-elements-yuan"
+          "id": "2-1-json-javascript"
         },
         {
-          "title": "Element selectors 元素選擇器",
+          "title": "2-2 名稱 - 值對",
           "depth": 2,
-          "id": "element-selectors-yuan"
+          "id": "2-2-"
         },
         {
-          "title": "On multiple words 在多個單字上",
+          "title": "2-3 JSON 的正確語法",
           "depth": 2,
-          "id": "on-multiple-words"
+          "id": "2-3-json"
         },
         {
-          "title": "Avoid tag selectors 避開標籤 (tag) 選擇器",
+          "title": "2-4 語法檢驗",
           "depth": 2,
-          "id": "avoid-tag-selectors-(tag)"
-        }
-      ]
-    },
-    "components.html": {
-      "source": "docs/components.md",
-      "title": "可以視情況增減檔案",
-      "slug": "components",
-      "headings": [
+          "id": "2-4"
+        },
         {
-          "title": "Naming components 元件命名",
+          "title": "2-5 JSON 文件",
           "depth": 2,
-          "id": "naming-components-yuan"
+          "id": "2-5-json"
+        },
+        {
+          "title": "2-6 JSON 的 MediaType",
+          "depth": 2,
+          "id": "2-6-json-mediatype"
         }
       ]
     },
@@ -479,8 +472,7 @@
   "sources": {
     "README.md": "index.html",
     "docs/1-what-is-json.md": "1-what-is-json.html",
-    "docs/elements.md": "elements.html",
-    "docs/components.md": "components.html",
+    "docs/2-json-syntax.md": "2-json-syntax.html",
     "docs/variants.md": "variants.html",
     "docs/nested-components.md": "nested-components.html",
     "docs/layouts.md": "layouts.html",
