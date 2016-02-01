@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>第十章：結論</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-10-summary">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/MiniaspReading/guide-to-json" data-title="MiniaspReading/guide-to-json" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="">&#x7B2C;&#x5341;&#x7AE0; &#x7D50;&#x8AD6;</h1>
+<p>JSON &#x4F5C;&#x70BA;&#x8CC7;&#x6599;&#x5BB9;&#x5668;&#x7684;&#x904B;&#x8F38;&#x5DE5;&#x5177;&#xFF0C;&#x4ED6;&#x4E26;&#x4E0D;&#x9396;&#x5B9A;&#x55AE;&#x4E00;&#x529F;&#x80FD;&#xFF0C;&#x5728; NoSQL &#x7684; JSON &#x4E2D;&#x770B;&#x5230;&#x9019;&#x6A23;&#x7684;&#x89D2;&#x8272;&#x3002;JSON &#x5728;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x61C9;&#x7528;&#x8D8A;&#x4F86;&#x8D8A;&#x5E38;&#x898B;&#xFF0C;&#x4E14;&#x767C;&#x5C55;&#x6210;&#x5F88;&#x5BE6;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x3002;
+JSON &#x53E6;&#x5916;&#x4E00;&#x500B;&#x6240;&#x626E;&#x6F14;&#x7684;&#x89D2;&#x8272;&#xFF1A;&#x8A2D;&#x5B9A;&#x6A94;&#x6848;&#x7684;&#x5BB9;&#x5668;&#x3002;</p>
+<h2 id="json">&#x4EE5; JSON &#x4F5C;&#x70BA;&#x8A2D;&#x5B9A;&#x6A94;</h2>
+<p>&#x7D44;&#x614B;&#x6216;&#x8A2D;&#x5B9A;&#x6A94;&#x901A;&#x5E38;&#x7528;&#x65BC;&#x8EDF;&#x9AD4;&#x4EE5;&#x8B93;&#x4ED6;&#x53EF;&#x4EE5;&#x6539;&#x8B8A;&#x800C;&#x7121;&#x9808;&#x91CD;&#x65B0;&#x7DE8;&#x8B6F;&#xFF0C;&#x901A;&#x5E38;&#x8A2D;&#x5B9A;&#x6A94;&#x7684;&#x683C;&#x5F0F;&#x5927;&#x90FD;&#x70BA; INI&#x3001;XML&#x3002;</p>
+<h3 id="ini">INI &#x683C;&#x5F0F;&#x7684;&#x8A2D;&#x5B9A;&#x6A94;&#x7BC4;&#x4F8B;</h3>
+<pre><code class="lang-sh">[general]
+playInfo = <span class="pl-c1">false</span>
+mouseSensitivity = <span class="hljs-number">0.54</span>
+
+[display]
+complexTextures = <span class="pl-c1">true</span>
+mode = wondowed
+widgetsPerFrame = <span class="hljs-number">222</span>
+
+[sount]
+volume =<span class="hljs-number">1</span>
+effects = <span class="hljs-number">0.68</span>
+</code></pre>
+<h3 id="xml">XML &#x683C;&#x5F0F;&#x7684;&#x8A2D;&#x5B9A;&#x6A94;&#x7BC4;&#x4F8B;</h3>
+<pre><code class="lang-sh">&lt;?xml version=<span class="pl-s">&quot;1.0&quot;</span> encoding=<span class="pl-s">&quot;UTF-8&quot;</span>?&gt;
+&lt;settings&gt;
+  &lt;general&gt;
+    &lt;playInfo&gt;<span class="pl-c1">false</span>&lt;/playInfo&gt;
+    &lt;mouseSensitivity&gt;<span class="pl-c1">false</span>&lt;/mouseSensitivity&gt;
+  &lt;/general&gt;
+  &lt;display&gt;
+    &lt;complexTextures&gt;<span class="pl-c1">false</span>&lt;/complexTextures&gt;
+    &lt;mode&gt;wondowed&lt;/mode&gt;
+    &lt;widgetsPerFrame&gt;<span class="hljs-number">222</span>&lt;/widgetsPerFrame&gt;
+  &lt;/display&gt;
+  &lt;sount&gt;
+    &lt;volume&gt;<span class="hljs-number">1</span>&lt;/volume&gt;
+    &lt;effects&gt;<span class="hljs-number">0.68</span>&lt;/effects&gt;
+  &lt;/sount&gt;
+&lt;/settings&gt;
+</code></pre>
+<h3 id="json">JSON &#x683C;&#x5F0F;&#x7684;&#x8A2D;&#x5B9A;&#x6A94;&#x7BC4;&#x4F8B;</h3>
+<pre><code class="lang-sh">{
+ <span class="pl-s">&quot;settings&quot;</span>: {
+   <span class="pl-s">&quot;general&quot;</span>: {
+     <span class="pl-s">&quot;playInfo&quot;</span>: <span class="pl-s">&quot;false&quot;</span>,
+     <span class="pl-s">&quot;mouseSensitivity&quot;</span>: <span class="pl-s">&quot;false&quot;</span>
+   },
+   <span class="pl-s">&quot;display&quot;</span>: {
+     <span class="pl-s">&quot;complexTextures&quot;</span>: <span class="pl-s">&quot;false&quot;</span>,
+     <span class="pl-s">&quot;mode&quot;</span>: <span class="pl-s">&quot;wondowed&quot;</span>,
+     <span class="pl-s">&quot;widgetsPerFrame&quot;</span>: <span class="pl-s">&quot;222&quot;</span>
+   },
+   <span class="pl-s">&quot;sount&quot;</span>: {
+     <span class="pl-s">&quot;volume&quot;</span>: <span class="pl-s">&quot;1&quot;</span>,
+     <span class="pl-s">&quot;effects&quot;</span>: <span class="pl-s">&quot;0.68&quot;</span>
+   }
+ }
+}
+
+</code></pre>
+<p>INI &#x6A94;&#x6848;&#x8B93;&#x4EBA;&#x5F88;&#x5BB9;&#x6613;&#x95B1;&#x8B80;&#xFF0C;&#x5FEB;&#x901F;&#x627E;&#x5230;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x8A2D;&#x5B9A;&#x5340;&#x57DF;&#xFF0C;&#x4F46;&#x4E0D;&#x9069;&#x5408;&#x66F4;&#x70BA;&#x8907;&#x96DC;&#x7684;&#x8CC7;&#x6599;&#x3002;XML &#x683C;&#x5F0F;&#x9069;&#x5408;&#x66F4;&#x8907;&#x96DC;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x4F46;&#x6C92;&#x6709; JSON &#x7684;&#x8CC7;&#x6599;&#x578B;&#x5225;&#x3002;
+&#x6B64;&#x4E09;&#x7A2E;&#x683C;&#x5F0F;&#x4EBA;&#x773C;&#x90FD;&#x53EF;&#x8B80;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x9069;&#x5408;&#x505A;&#x70BA;&#x8A2D;&#x5B9A;&#x6A94;&#x3002;</p>
+<p>Node .js &#x9810;&#x8A2D;&#x7684; Javascript &#x5957;&#x4EF6;&#x7BA1;&#x7406;&#x54E1;&#xFF1A;npm &#x662F;&#x4EE5; JSON &#x4F5C;&#x70BA;&#x5957;&#x4EF6;&#x7684;&#x8A2D;&#x5B9A;&#x6A94;&#x3002;package.json &#x6A94;&#x6848;&#x4FDD;&#x5B58;&#x4E86;&#x6BCF;&#x4E00;&#x500B;&#x5957;&#x4EF6;&#x7684;&#x7279;&#x5B9A;&#x8CC7;&#x8A0A;&#xFF0C;
+&#xFF0C;&#x50CF;&#x662F;&#x540D;&#x7A31;&#x3001;&#x7248;&#x672C;&#x3001;&#x8CA2;&#x737B;&#x8005;&#x3001;&#x76F8;&#x4EE5;&#x6027;&#x3001;&#x8AAA;&#x660E;&#x3001;&#x6388;&#x6B0A;&#x7B49;&#x3002;</p>
+<pre><code class="lang-sh">{
+  <span class="pl-s">&quot;name&quot;</span>: <span class="pl-s">&quot;guide-to-json&quot;</span>,
+  <span class="pl-s">&quot;version&quot;</span>: <span class="pl-s">&quot;1.0.0&quot;</span>,
+  <span class="pl-s">&quot;description&quot;</span>: <span class="pl-s">&quot;&quot;</span>,
+  <span class="pl-s">&quot;main&quot;</span>: <span class="pl-s">&quot;index.js&quot;</span>,
+  <span class="pl-s">&quot;directories&quot;</span>: {
+    <span class="pl-s">&quot;doc&quot;</span>: <span class="pl-s">&quot;docs&quot;</span>
+  },
+  <span class="pl-s">&quot;scripts&quot;</span>: {
+    <span class="pl-s">&quot;test&quot;</span>: <span class="pl-s">&quot;true&quot;</span>,
+    <span class="pl-s">&quot;build&quot;</span>: <span class="pl-s">&quot;docpress b&quot;</span>,
+    <span class="pl-s">&quot;deploy&quot;</span>: <span class="pl-s">&quot;git-update-ghpages -e --keep MiniaspReading/guide-to-json _docpress&quot;</span>
+  },
+  <span class="pl-s">&quot;repository&quot;</span>: {
+    <span class="pl-s">&quot;type&quot;</span>: <span class="pl-s">&quot;git&quot;</span>,
+    <span class="pl-s">&quot;url&quot;</span>: <span class="pl-s">&quot;git+https://github.com/MiniaspReading/guide-to-json.git&quot;</span>
+  },
+  <span class="pl-s">&quot;author&quot;</span>: <span class="pl-s">&quot;MiniaspReading &lt;jeff@miniasp.com.tw&gt;&quot;</span>,
+  <span class="pl-s">&quot;license&quot;</span>: <span class="pl-s">&quot;MIT&quot;</span>,
+  <span class="pl-s">&quot;bugs&quot;</span>: {
+    <span class="pl-s">&quot;url&quot;</span>: <span class="pl-s">&quot;https://github.com/MiniaspReading/guide-to-json/issues&quot;</span>
+  },
+  <span class="pl-s">&quot;homepage&quot;</span>: <span class="pl-s">&quot;https://github.com/MiniaspReading/guide-to-json#readme&quot;</span>,
+  <span class="pl-s">&quot;devDependencies&quot;</span>: {
+    <span class="pl-s">&quot;docpress&quot;</span>: <span class="pl-s">&quot;^0.6.10&quot;</span>,
+    <span class="pl-s">&quot;git-update-ghpages&quot;</span>: <span class="pl-s">&quot;1.3.0&quot;</span>,
+    <span class="pl-s">&quot;markdown-it-decorate&quot;</span>: <span class="pl-s">&quot;1.0.0&quot;</span>,
+    <span class="pl-s">&quot;resolve&quot;</span>: <span class="pl-s">&quot;^1.1.6&quot;</span>
+  }
+}
+</code></pre>
+<p>&#x96D6;&#x7136; JSON &#x662F;&#x4F5C;&#x70BA;&#x8A2D;&#x5B9A;&#x6A94;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#xFF0C;&#x4ED6;&#x9084;&#x662F;&#x626E;&#x6F14;&#x8457;&#x8CC7;&#x6599;&#x4EA4;&#x63DB;&#x683C;&#x5F0F;&#x7684;&#x89D2;&#x8272;</p>
+<h3 id="">&#x5927;&#x5C40;</h3>
+<ul>
+<li>
+<p>&#x5728;&#x4F3A;&#x670D;&#x5668;&#x7AEF;&#xFF0C;&#x7269;&#x4EF6;&#x53EF;&#x4EE5;&#x5E8F;&#x5217;&#x5316;&#x6210; JSON &#x6587;&#x5B57;&#x683C;&#x5F0F;&#x4E26;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x56DE;&#x7269;&#x4EF6;&#x3002;JSON &#x4E5F;&#x53EF;&#x5F9E;&#x4F3A;&#x670D;&#x5668;&#x7AEF;&#x7A0B;&#x5F0F;&#x8ACB;&#x6C42;&#x3002;</p>
+</li>
+<li>
+<p>&#x6B64;&#x5916; JSON &#x4E5F;&#x53EF;&#x4F5C;&#x70BA;&#x6587;&#x4EF6;&#x5132;&#x5B58;&#x9AD4;&#x985E;&#x578B;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7B2C;&#x516B;&#x7AE0;&#x6211;&#x5011;&#x4F7F;&#x7528; CouchDB API &#x4ECB;&#x9762;&#x7684;&#x8CC7;&#x6599;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li>
+<p>JavaScript &#x7684; XmlHttpRequest &#x53EF;&#x4EE5;&#x5F9E;&#x4E00;&#x500B; URL &#x8ACB;&#x6C42; JSON &#x8CC7;&#x6E90;&#x3002;&#x70BA;&#x65BC; JavaScript &#x7A0B;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528; JSON
+&#x6211;&#x5011;&#x5FC5;&#x9808;&#x5C07; JSON &#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6210; JavaScript &#x7269;&#x4EF6;&#xFF0C;&#x900F;&#x904E;&#x5167;&#x5EFA;&#x7684; JSON.press() &#x51FD;&#x5F0F;&#x9054;&#x6210;&#x3002;</p>
+</li>
+<li>
+<p>&#x5728;&#x7DB2;&#x969B;&#x7DB2;&#x8DEF;&#x700F;&#x89BD;&#x5668;&#x7B49;&#x7CFB;&#x7D71;&#x4E2D;&#xFF0C;JavaScript &#x652F;&#x63F4;&#x7269;&#x4EF6;&#x5C0E;&#x5411;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#xFF0C;JSON &#x5F88;&#x9069;&#x5408;&#x4EA4;&#x63DB;&#x8CC7;&#x6599;&#xFF0C;&#x53EF;&#x900F;&#x904E; API &#x6E9D;&#x901A;&#x53CA;&#x4EE5;&#x5EFA;&#x69CB; AJAX &#x4E92;&#x52D5;&#x3002;</p>
+</li>
+<li>
+<p>&#x5728;&#x4F3A;&#x670D;&#x5668;&#x7AEF;&#x7269;&#x4EF6;&#x5C0E;&#x5411;&#x7684;&#x67B6;&#x69CB;&#x4E2D;&#xFF0C;JSON &#x5F88;&#x9069;&#x5408;&#x4EA4;&#x63DB;&#x8CC7;&#x6599;&#xFF0C;JSON &#x9032;&#x51FA;&#x7CFB;&#x7D71;&#x6642;&#x4EE5;&#x7269;&#x4EF6;&#x5BE6;&#x5B57;&#x7DAD;&#x8B77;&#x8CC7;&#x6599;&#x7684;&#x7D50;&#x69CB;&#x3002;</p>
+</li>
+</ul>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="9-JSON_On_Server.html"><span class="title">第九章：伺服器端的 JSON</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">JSON 精要讀書紀錄</a>
+            </li>
+            <li class="menu-item -level-1"><a href="1-what-is-json.html" class="link title  link-1-what-is-json">第一章：JSON 是什麼?</a>
+            </li>
+            <li class="menu-item -level-1"><a href="2-json-syntax.html" class="link title  link-2-json-syntax">第二章：JSON 語法</a>
+            </li>
+            <li class="menu-item -level-1"><a href="variants.html" class="link title  link-variants">第三章：JSON 資料型別</a>
+            </li>
+            <li class="menu-item -level-1"><a href="nested-components.html" class="link title  link-nested-components">第四章：JSON 結構描述</a>
+            </li>
+            <li class="menu-item -level-1"><a href="layouts.html" class="link title  link-layouts">第五章：JSON 安全考量</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers">第六章：JavaScript 的 XML HttpRequest 與 API</a>
+            </li>
+            <li class="menu-item -level-1"><a href="helpers.html" class="link title  link-helpers-2">第七章：JSON 與用戶端架構</a>
+            </li>
+            <li class="menu-item -level-1"><a href="8-json-and-nosql.html" class="link title  link-8-json-and-nosql">第八章：JSON 與 NoSQL</a>
+            </li>
+            <li class="menu-item -level-1"><a href="9-JSON_On_Server.html" class="link title  link-9-json_on_server">第九章：伺服器端的 JSON</a>
+            </li>
+            <li class="menu-item -level-1"><a href="10-summary.html" class="link title -active link-10-summary">第十章：結論</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a href="#json" class="link title link-json">以 JSON 作為設定檔</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="#ini" class="link title link-ini">INI 格式的設定檔範例</a>
+                </li>
+                <li class="menu-item -level-2"><a href="#xml" class="link title link-xml">XML 格式的設定檔範例</a>
+                </li>
+                <li class="menu-item -level-2"><a href="#json" class="link title link-json">JSON 格式的設定檔範例</a>
+                </li>
+                <li class="menu-item -level-2"><a href="#" class="link title link-">大局</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

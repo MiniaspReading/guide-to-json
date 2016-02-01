@@ -247,10 +247,39 @@
       },
       {
         "title": "第十章：結論",
-        "source": "docs/summary.md",
+        "source": "docs/10-summary.md",
         "expand": true,
-        "url": "summary.html",
-        "slug": "summary"
+        "url": "10-summary.html",
+        "slug": "10-summary",
+        "headings": [
+          {
+            "title": "以 JSON 作為設定檔",
+            "depth": 2,
+            "id": "json",
+            "headings": [
+              {
+                "title": "INI 格式的設定檔範例",
+                "depth": 3,
+                "id": "ini"
+              },
+              {
+                "title": "XML 格式的設定檔範例",
+                "depth": 3,
+                "id": "xml"
+              },
+              {
+                "title": "JSON 格式的設定檔範例",
+                "depth": 3,
+                "id": "json"
+              },
+              {
+                "title": "大局",
+                "depth": 3,
+                "id": ""
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -463,10 +492,39 @@
         }
       ]
     },
-    "summary.html": {
-      "source": "docs/summary.md",
+    "10-summary.html": {
+      "source": "docs/10-summary.md",
       "title": "第十章：結論",
-      "slug": "summary"
+      "slug": "10-summary",
+      "headings": [
+        {
+          "title": "以 JSON 作為設定檔",
+          "depth": 2,
+          "id": "json",
+          "headings": [
+            {
+              "title": "INI 格式的設定檔範例",
+              "depth": 3,
+              "id": "ini"
+            },
+            {
+              "title": "XML 格式的設定檔範例",
+              "depth": 3,
+              "id": "xml"
+            },
+            {
+              "title": "JSON 格式的設定檔範例",
+              "depth": 3,
+              "id": "json"
+            },
+            {
+              "title": "大局",
+              "depth": 3,
+              "id": ""
+            }
+          ]
+        }
+      ]
     }
   },
   "sources": {
@@ -479,7 +537,7 @@
     "docs/helpers.md": "helpers.html",
     "docs/8-json-and-nosql.md": "8-json-and-nosql.html",
     "docs/9-JSON_On_Server.md": "9-JSON_On_Server.html",
-    "docs/summary.md": "summary.html",
+    "docs/10-summary.md": "10-summary.html",
     "docs/docpress.json": "docpress.json",
     "docs/images/component-elements.png": "images/component-elements.png",
     "docs/images/component-example.png": "images/component-example.png",
