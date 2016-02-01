@@ -21,7 +21,7 @@ widgetsPerFrame = 222
 volume =1
 effects = 0.68
 ```
- ### XML 格式的設定檔範例
+### XML 格式的設定檔範例
  
  ```sh
 <?xml version="1.0" encoding="UTF-8"?>
